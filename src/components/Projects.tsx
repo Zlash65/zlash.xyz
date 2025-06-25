@@ -2,7 +2,7 @@ import React, { useState, useEffect, useRef } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { ExternalLink, Github, X, Eye, Play } from 'lucide-react';
 
-type MediaType = 'video' | 'gif' | 'image' | 'website';
+type MediaType = 'video' | 'gif' | 'image' | 'website' | 'code';
 type MediaFormat = 'local' | 'remote' | 'youtube' | string;
 
 interface Project {
@@ -120,9 +120,9 @@ const projects: Project[] = [
     category: 'Finance',
     description:
       'Frappe app aggregating exchange data, portfolio tracking, and price alerts.',
-    mediaType: 'image',
-    mediaFormat: 'local',
-    link: '/assets/images/projects-crypto.png',
+    mediaType: 'code',
+    mediaFormat: 'remote',
+    link: 'https://github.com/Zlash65/Crypto',
     thumbnail: '/assets/images/projects-crypto.png',
     github: 'https://github.com/Zlash65/Crypto',
     tags: ['Frappe', 'Cryptocurrency', 'Alerts'],
@@ -143,9 +143,9 @@ const projects: Project[] = [
     category: 'Education',
     description:
       'AngelList-style platform connecting teachers with institutions.',
-    mediaType: 'image',
-    mediaFormat: 'local',
-    link: '/assets/images/projects-shikshak.png',
+    mediaType: 'code',
+    mediaFormat: 'remote',
+    link: 'https://github.com/speedforce-sih17/shikshak',
     thumbnail: '/assets/images/projects-shikshak.png',
     github: 'https://github.com/speedforce-sih17/shikshak',
     tags: ['Education', 'Platform', 'Recruitment', 'Android'],
