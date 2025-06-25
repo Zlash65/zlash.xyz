@@ -214,6 +214,7 @@ const hoverLabels: Record<MediaType, string> = {
   gif: 'view gif',
   image: 'view image',
   website: 'view live',
+  code: 'view code'
 };
 
 /* ───────── helpers ───────── */
