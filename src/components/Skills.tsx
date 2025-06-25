@@ -173,7 +173,7 @@ const Skills: React.FC = () => {
   };
 
   return (
-    <section id="skills" className="py-20 px-4 bg-black/20 dark:bg-black/20">
+    <section id="skills" className="py-20 px-4">
       <div className="max-w-7xl mx-auto">
         <motion.div
           variants={containerVariants}

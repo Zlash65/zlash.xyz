@@ -34,7 +34,7 @@ const About: React.FC = () => {
   ];
 
   return (
-    <section id="about" className="py-20 px-4">
+    <section id="about" className="py-20 px-4 bg-black/20 dark:bg-black/20">
       <div className="max-w-6xl mx-auto">
         <motion.div
           variants={containerVariants}

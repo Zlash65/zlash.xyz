@@ -290,7 +290,7 @@ const Projects: React.FC = () => {
   const closeModal = () => setSelected(null);
 
   return (
-    <section id="projects" className="py-20 px-4">
+    <section id="projects" className="py-20 px-4 bg-black/20 dark:bg-black/20">
       <div className="max-w-7xl mx-auto">
         <motion.div
           variants={containerVariants}
