@@ -1,6 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { MapPin, Phone, Mail, Gamepad2, Monitor, Book, Plane } from 'lucide-react';
+import { MapPin, Phone, Mail, Gamepad2, Monitor, Book, Plane, Smartphone } from 'lucide-react';
 
 const About: React.FC = () => {
   const containerVariants = {
@@ -54,29 +54,25 @@ const About: React.FC = () => {
             </p>
           </motion.div>
 
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
-            {/* Contact Information */}
+          {/* Personal Story & Key Achievements */}
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-stretch">
             <motion.div
               variants={itemVariants}
               className="space-y-6"
             >
+              {/* Personal Story */}
               <div className="bg-white/5 dark:bg-white/5 backdrop-blur-sm rounded-2xl p-8 border border-white/10">
-                <h3 className="text-2xl font-semibold mb-6 text-neon-blue">Contact Information</h3>
-                <div className="space-y-4">
-                  <div className="flex items-center gap-3">
-                    <MapPin className="text-neon-purple" size={20} />
-                    <span>Toronto, Ontario, Canada</span>
-                  </div>
-                  <div className="flex items-center gap-3">
-                    <Phone className="text-neon-blue" size={20} />
-                    <span>+1 647-526-2462 / +91 798-466-8662</span>
-                  </div>
-                  <div className="flex items-center gap-3">
-                    <Mail className="text-neon-pink" size={20} />
-                    <a href="mailto:zarrar65@gmail.com" className="hover:text-neon-pink transition-colors">
-                      zarrar65@gmail.com
-                    </a>
-                  </div>
+                <h3 className="text-2xl font-semibold mb-6 text-neon-pink">My Journey</h3>
+                <div className="space-y-4 text-gray-600 dark:text-gray-300">
+                  <p>
+                    🚀 Over the last 8+ years, I've built and maintained production-grade systems for fast-growing startups – from designing payroll infra that processed ₹1B+ in transactions to migrating an entire company off Heroku to AWS.
+                  </p>
+                  <p>
+                    📈 I care about developer experience, real-world reliability, and continuous learning. I pick up new tools quickly and constantly look for ways to improve systems and team velocity.
+                  </p>
+                  <p>
+                    🧠 Currently exploring: <strong className="text-neon-blue">LLM agent infra, AI-powered developer tools, async Python workflows</strong>, and more.
+                  </p>
                 </div>
               </div>
 
@@ -115,24 +111,33 @@ const About: React.FC = () => {
               </motion.div>
             </motion.div>
 
-            {/* Personal Story & Hobbies */}
+            {/* Contact Information & Hobbies */}
             <motion.div
               variants={itemVariants}
               className="space-y-6"
             >
-              {/* Personal Story */}
+              {/* Contact Information */}
               <div className="bg-white/5 dark:bg-white/5 backdrop-blur-sm rounded-2xl p-8 border border-white/10">
-                <h3 className="text-2xl font-semibold mb-6 text-neon-pink">My Journey</h3>
-                <div className="space-y-4 text-gray-600 dark:text-gray-300">
-                  <p>
-                    🚀 Over the last 8+ years, I've built and maintained production-grade systems for fast-growing startups – from designing payroll infra that processed ₹1B+ in transactions to migrating an entire company off Heroku to AWS.
-                  </p>
-                  <p>
-                    📈 I care about developer experience, real-world reliability, and continuous learning. I pick up new tools quickly and constantly look for ways to improve systems and team velocity.
-                  </p>
-                  <p>
-                    🧠 Currently exploring: <strong className="text-neon-blue">LLM agent infra, AI-powered developer tools, async Python workflows</strong>, and more.
-                  </p>
+                <h3 className="text-2xl font-semibold mb-6 text-neon-blue">Contact Information</h3>
+                <div className="space-y-4">
+                  <div className="flex items-center gap-3">
+                    <MapPin className="text-neon-purple" size={20} />
+                    <span>Toronto, Ontario, Canada</span>
+                  </div>
+                  <div className="flex items-center gap-3">
+                    <Smartphone className="text-neon-blue" size={20} />
+                    <span>+1 647-526-2462</span>
+                  </div>
+                  <div className="flex items-center gap-3">
+                    <Phone className="text-neon-blue" size={20} />
+                    <span>+91 798-466-8662</span>
+                  </div>
+                  <div className="flex items-center gap-3">
+                    <Mail className="text-neon-pink" size={20} />
+                    <a href="mailto:zarrar65@gmail.com" className="hover:text-neon-pink transition-colors">
+                      zarrar65@gmail.com
+                    </a>
+                  </div>
                 </div>
               </div>
 
@@ -159,7 +164,10 @@ const About: React.FC = () => {
                   ))}
                 </div>
                 <p className="text-gray-600 dark:text-gray-300 mt-6 italic">
-                  I love getting lost in immersive worlds—whether in games, stories, or code.
+                  Somewhere in the multiverse, there’s a timeline more advanced than ours, free from capitalism, where I don’t have to work to survive - and my anime backlog is finally complete.
+                </p>
+                <p className="text-gray-600 dark:text-gray-300 mt-6 italic">
+                  El. Psy. Congroo.
                 </p>
               </div>
             </motion.div>
