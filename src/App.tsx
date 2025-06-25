@@ -3,6 +3,7 @@ import { motion, AnimatePresence } from 'framer-motion';
 import Header from './components/Header';
 import Hero from './components/Hero';
 import About from './components/About';
+import Experience from './components/Experience';
 import Skills from './components/Skills';
 import StarField from './components/StarField';
 import FloatingElements from './components/FloatingElements';
@@ -49,6 +50,7 @@ function App() {
         >
           <Hero />
           <About />
+          <Experience />
           <Skills />
         </motion.main>
       </div>
