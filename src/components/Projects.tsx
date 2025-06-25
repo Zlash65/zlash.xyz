@@ -297,7 +297,7 @@ const Projects: React.FC = () => {
           variants={containerVariants}
           initial="hidden"
           whileInView="visible"
-          viewport={{ once: true, amount: 0.3 }}
+          viewport={{ once: true, amount: 0.05 }}
         >
           {/* header */}
           <motion.div variants={itemVariants} className="text-center mb-16">
