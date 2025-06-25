@@ -5,6 +5,7 @@ import Hero from './components/Hero';
 import About from './components/About';
 import Experience from './components/Experience';
 import Skills from './components/Skills';
+import Education from './components/Education';
 import StarField from './components/StarField';
 import FloatingElements from './components/FloatingElements';
 
@@ -52,6 +53,7 @@ function App() {
           <About />
           <Experience />
           <Skills />
+          <Education />
         </motion.main>
       </div>
     </div>
