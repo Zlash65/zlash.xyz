@@ -13,6 +13,18 @@ export const projects: Project[] = [
     tags: ["Python", "ML", "SGD", "RFC", "Healthcare"],
   },
   {
+    title: "Agentic AI Chatbot",
+    categories: ["Featured", "AI | ML"],
+    description:
+      "End-to-End AI Agent Chatbot with FastAPI, LangGraph, Langchain & Streamlit!",
+    mediaType: "code",
+    mediaFormat: "remote",
+    link: "https://github.com/Zlash65/agentic-ai-chatbot-example",
+    github: "https://github.com/Zlash65/agentic-ai-chatbot-example",
+    thumbnail: "/assets/gifs/blogs-agentic-ai-chatbot.gif",
+    tags: ["Gen-AI", "LLM", "Langchain", "FastAPI", "Streamlit"],
+  },
+  {
     title: "Gen-AI Dockerfile Generator",
     categories: ["Featured", "AI | ML"],
     description:
@@ -23,6 +35,17 @@ export const projects: Project[] = [
     github: "https://github.com/Zlash65/aws-bedrock-example",
     thumbnail: "/assets/images/blogs-gen-ai-dockerfile-generator.png",
     tags: ["Gen-AI", "AWS Bedrock", "AWS Lambda", "Terraform", "LLM"],
+  },
+  {
+    title: "Building an AI Chatbot with LangChain, FastAPI & Streamlit",
+    categories: ["Featured", "AI | ML"],
+    description:
+      "An end-to-end AI Agent Chatbot built using FastAPI, LangGraph, Langchain & Streamlit!",
+    mediaType: "blog",
+    mediaFormat: "remote",
+    link: "https://medium.com/@zlash65/building-an-ai-chatbot-with-langchain-fastapi-streamlit-cf74f413ec15",
+    thumbnail: "/assets/gifs/blogs-agentic-ai-chatbot.gif",
+    tags: ["Gen-AI", "LLM", "Langchain", "FastAPI", "Streamlit"],
   },
   {
     title:
@@ -225,7 +248,7 @@ export const projects: Project[] = [
   },*/
   {
     title: "Motion Design – Kinetic Typography",
-    categories: ["Featured", "Motion Design"],
+    categories: ["Motion Design"],
     description:
       "Kinetic typography motion graphic psa created for final assignment in Adobe After Effects.",
     mediaType: "video",
