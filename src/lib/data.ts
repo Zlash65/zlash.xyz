@@ -3,7 +3,7 @@ import { Project } from "./types";
 export const projects: Project[] = [
   {
     title: "Tumor Diagnosis",
-    category: "Machine Learning",
+    categories: ["Featured", "AI | ML"],
     description:
       "ML model predicting brain-tumor location and type from MRI scans using SGD and Random Forest.",
     mediaType: "video",
@@ -13,9 +13,21 @@ export const projects: Project[] = [
     tags: ["Python", "ML", "SGD", "RFC", "Healthcare"],
   },
   {
+    title: "Gen-AI Dockerfile Generator",
+    categories: ["Featured", "AI | ML"],
+    description:
+      "End to End Gen-AI project on AWS using AWS Bedrock and AWS Lambda",
+    mediaType: "code",
+    mediaFormat: "remote",
+    link: "https://github.com/Zlash65/aws-bedrock-example",
+    github: "https://github.com/Zlash65/aws-bedrock-example",
+    thumbnail: "/assets/images/blogs-gen-ai-dockerfile-generator.png",
+    tags: ["Gen-AI", "AWS Bedrock", "AWS Lambda", "Terraform", "LLM"],
+  },
+  {
     title:
       "Build a Gen-AI Dockerfile Generator using Amazon Bedrock + Terraform",
-    category: "AI Engineering",
+    categories: ["AI Engineering"],
     description:
       "An end-to-end serverless Gen-AI tool built using AWS Bedrock, Lambda, and Terraform.",
     mediaType: "blog",
@@ -26,7 +38,7 @@ export const projects: Project[] = [
   },
   {
     title: "Setting up Jitsi-Meet on your Server",
-    category: "DevOps",
+    categories: ["DevOps"],
     description:
       "Step-by-step guide to self-hosting the Jitsi video conferencing platform with minimal setup on your own server.",
     mediaType: "blog",
@@ -36,8 +48,20 @@ export const projects: Project[] = [
     tags: ["Jitsi Meet", "Self-hosting", "DevOps", "Video Conferencing"],
   },
   {
+    title: "zlash.xyz – Personal Portfolio",
+    categories: ["Featured", "Web Development"],
+    description:
+      "Current portfolio site you're on, built with React.js, Tailwind CSS (modal, responsive design), and Framer Motion (animations).",
+    mediaType: "website",
+    mediaFormat: "remote",
+    link: "https://www.zlash.xyz",
+    thumbnail: "/assets/images/projects-zlash-xyz-portfolio.png",
+    github: "https://github.com/Zlash65/zlash.xyz",
+    tags: ["React.js", "Tailwind CSS", "Framer Motion", "Portfolio"],
+  },
+  {
     title: "React.js + Tailwind Portfolio",
-    category: "Web Development",
+    categories: ["Web Development"],
     description:
       "Personal portfolio site built with React.js and Tailwind CSS for Humber College’s Web Design & Development course.",
     mediaType: "website",
@@ -49,7 +73,7 @@ export const projects: Project[] = [
   },
   {
     title: "Next.js + Tailwind Portfolio",
-    category: "Web Development",
+    categories: ["Web Development"],
     description:
       "Personal portfolio site built with Next.js and Tailwind CSS for Humber College’s Web Design & Development course.",
     mediaType: "website",
@@ -61,7 +85,7 @@ export const projects: Project[] = [
   },
   {
     title: "Job Portal – React.js + Tailwind",
-    category: "Web Development",
+    categories: ["Web Development"],
     description:
       "Job portal matching nurses with healthcare facilities, built on React.js and Tailwind CSS.",
     mediaType: "website",
@@ -73,7 +97,7 @@ export const projects: Project[] = [
   },
   {
     title: "Job Portal – Next.js + Tailwind",
-    category: "Web Development",
+    categories: ["Web Development"],
     description:
       "Job portal matching nurses with healthcare facilities, built on Next.js and Tailwind CSS.",
     mediaType: "website",
@@ -85,7 +109,7 @@ export const projects: Project[] = [
   },
   {
     title: "Jitsi Integration",
-    category: "Integration",
+    categories: ["Featured", "Integration"],
     description:
       "Customized and embedded the open-source Jitsi video-conferencing platform into Kredily’s HRM product.",
     mediaType: "video",
@@ -97,7 +121,7 @@ export const projects: Project[] = [
   },
   {
     title: "Mattermost Integration",
-    category: "Integration",
+    categories: ["Featured", "Integration"],
     description:
       "Forked and modified Mattermost to integrate internal chat into Kredily’s HRM product.",
     mediaType: "website",
@@ -109,7 +133,7 @@ export const projects: Project[] = [
   },
   {
     title: "Connect 4 Game",
-    category: "Game Development",
+    categories: ["Web Development"],
     description: "Two-player Connect 4 built with vanilla JavaScript.",
     mediaType: "website",
     mediaFormat: "remote",
@@ -120,7 +144,7 @@ export const projects: Project[] = [
   },
   {
     title: "Crypto Portfolio Tracker",
-    category: "Finance",
+    categories: ["Hackathon"],
     description:
       "Frappe app aggregating exchange data, portfolio tracking, and price alerts.",
     mediaType: "code",
@@ -132,7 +156,7 @@ export const projects: Project[] = [
   },
   {
     title: "Itinerate",
-    category: "Travel",
+    categories: ["Hackathon"],
     description:
       "Hackathon project that builds a shortest-path itinerary for must-see spots.",
     mediaType: "video",
@@ -143,7 +167,7 @@ export const projects: Project[] = [
   },
   {
     title: "ShikShak",
-    category: "Education",
+    categories: ["Hackathon"],
     description:
       "AngelList-style platform connecting teachers with institutions.",
     mediaType: "code",
@@ -155,7 +179,7 @@ export const projects: Project[] = [
   },
   {
     title: "11ty Marketing Site",
-    category: "Static Site",
+    categories: ["Web Development"],
     description:
       "Responsive marketing site built with the 11ty static-site generator and Tailwind CSS.",
     mediaType: "website",
@@ -167,7 +191,7 @@ export const projects: Project[] = [
   },
   {
     title: "Animated Brand Logo – Proton VPN",
-    category: "Motion Design",
+    categories: ["Motion Design"],
     description:
       "Proton VPN logo animation created in Adobe After Effects and exported as Lottie.",
     mediaType: "gif",
@@ -179,7 +203,7 @@ export const projects: Project[] = [
   },
   {
     title: "Logo Reveal – Crunchyroll",
-    category: "Motion Design",
+    categories: ["Motion Design"],
     description:
       "Crunchyroll logo reveal animation created in Adobe After Effects.",
     mediaType: "video",
@@ -190,7 +214,7 @@ export const projects: Project[] = [
   },
   /*{
     title: 'Motion Design – Preproduction',
-    category: 'Motion Design',
+    categories: ['Motion Design'],
     description:
       'Short motion-graphics piece exploring pre-production concepts created in Adobe After Effects.',
     mediaType: 'video',
@@ -201,7 +225,7 @@ export const projects: Project[] = [
   },*/
   {
     title: "Motion Design – Kinetic Typography",
-    category: "Motion Design",
+    categories: ["Featured", "Motion Design"],
     description:
       "Kinetic typography motion graphic psa created for final assignment in Adobe After Effects.",
     mediaType: "video",

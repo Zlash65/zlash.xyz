@@ -3,7 +3,7 @@ export type MediaFormat = "local" | "remote" | "youtube" | string;
 
 export interface Project {
   title: string;
-  category: string;
+  categories: string[];
   description: string;
   mediaType: MediaType;
   mediaFormat: MediaFormat;
