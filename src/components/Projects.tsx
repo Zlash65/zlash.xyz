@@ -2,7 +2,7 @@ import React, { useState, useEffect, useRef } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { ExternalLink, Github, X, Eye, Play } from 'lucide-react';
 
-type MediaType = 'video' | 'gif' | 'image' | 'website' | 'code';
+type MediaType = 'video' | 'gif' | 'image' | 'website' | 'code' | 'blog';
 type MediaFormat = 'local' | 'remote' | 'youtube' | string;
 
 interface Project {
@@ -30,6 +30,28 @@ const projects: Project[] = [
     link: 'https://youtu.be/yIQFmOheUiQ?si=1SsYdFdmcJEhbhsp',
     thumbnail: '',
     tags: ['Python', 'ML', 'SGD', 'RFC', 'Healthcare'],
+  },
+  {
+    title: 'Build a Gen-AI Dockerfile Generator using Amazon Bedrock + Terraform',
+    category: 'AI Engineering',
+    description:
+      'An end-to-end serverless Gen-AI tool built using AWS Bedrock, Lambda, and Terraform — generates Dockerfiles from natural language prompts.',
+    mediaType: 'blog',
+    mediaFormat: 'remote',
+    link: 'https://medium.com/@zlash65/build-a-gen-ai-dockerfile-generator-with-aws-bedrock-and-terraform-927f6aba0781',
+    thumbnail: '',
+    tags: ['Gen-AI', 'AWS Bedrock', 'AWS Lambda', 'Terraform', 'LLM'],
+  },
+  {
+    title: 'Setting up Jitsi-Meet on your Server',
+    category: 'DevOps',
+    description:
+      'Step-by-step guide to self-hosting the Jitsi video conferencing platform with minimal setup on your own server.',
+    mediaType: 'blog',
+    mediaFormat: 'remote',
+    link: 'https://medium.com/swlh/setting-up-jitsi-meet-on-your-server-b29ca29ef345',
+    thumbnail: '',
+    tags: ['Jitsi Meet', 'Self-hosting', 'DevOps', 'Video Conferencing'],
   },
   {
     title: 'React.js + Tailwind Portfolio',
@@ -214,7 +236,8 @@ const hoverLabels: Record<MediaType, string> = {
   gif: 'view gif',
   image: 'view image',
   website: 'view live',
-  code: 'view code'
+  code: 'view code',
+  blog: 'read blog'
 };
 
 /* ───────── helpers ───────── */
@@ -249,7 +272,7 @@ const getThumbnail = (p: Project) => {
     const id = getYouTubeId(p.link);
     return id ? `https://img.youtube.com/vi/${id}/mqdefault.jpg` : '';
   }
-  if (p.mediaType === 'website')
+  if (p.mediaType === 'website' || p.mediaType === 'blog')
     return `https://image.thum.io/get/og/${encodeURIComponent(p.link)}`;
   if (p.mediaType === 'gif' || p.mediaType === 'image') return p.link;
   return '/assets/images/placeholder.png';
@@ -436,6 +459,22 @@ const Projects: React.FC = () => {
                         >
                           <ExternalLink size={14} />
                           Source
+                        </motion.a>
+                      )}
+
+                      {/* Blog */}
+                      {p.mediaType === 'blog' && (
+                        <motion.a
+                          href={p.link}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="flex items-center gap-1 px-3 py-2 bg-blue-600 text-white text-sm rounded-lg hover:bg-blue-700 transition-colors"
+                          whileHover={{ scale: 1.05 }}
+                          whileTap={{ scale: 0.95 }}
+                          onClick={(e) => e.stopPropagation()}
+                        >
+                          <ExternalLink size={14} />
+                          Read
                         </motion.a>
                       )}
                     </div>
