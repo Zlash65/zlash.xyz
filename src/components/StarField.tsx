@@ -1,4 +1,4 @@
-import React, { useEffect, useRef } from 'react';
+import React, { useEffect, useRef } from "react";
 
 const StarField: React.FC = () => {
   const canvasRef = useRef<HTMLCanvasElement>(null);
@@ -7,7 +7,7 @@ const StarField: React.FC = () => {
     const canvas = canvasRef.current;
     if (!canvas) return;
 
-    const ctx = canvas.getContext('2d');
+    const ctx = canvas.getContext("2d");
     if (!ctx) return;
 
     // Set canvas size
@@ -17,7 +17,7 @@ const StarField: React.FC = () => {
     };
 
     resizeCanvas();
-    window.addEventListener('resize', resizeCanvas);
+    window.addEventListener("resize", resizeCanvas);
 
     // Star properties
     const stars: Array<{
@@ -33,7 +33,7 @@ const StarField: React.FC = () => {
     const createStars = () => {
       const numStars = Math.floor((canvas.width * canvas.height) / 8000);
       stars.length = 0;
-      
+
       for (let i = 0; i < numStars; i++) {
         stars.push({
           x: Math.random() * canvas.width,
@@ -54,18 +54,19 @@ const StarField: React.FC = () => {
 
     const animate = () => {
       ctx.clearRect(0, 0, canvas.width, canvas.height);
-      
+
       time += 0.016; // Roughly 60fps
 
       stars.forEach((star) => {
-        const twinkle = Math.sin(time * star.twinkleSpeed + star.twinkleOffset) * 0.3 + 0.7;
+        const twinkle =
+          Math.sin(time * star.twinkleSpeed + star.twinkleOffset) * 0.3 + 0.7;
         const alpha = star.opacity * twinkle;
-        
+
         ctx.beginPath();
         ctx.arc(star.x, star.y, star.radius, 0, Math.PI * 2);
         ctx.fillStyle = `rgba(255, 255, 255, ${alpha})`;
         ctx.fill();
-        
+
         // Add a subtle glow for brighter stars
         if (star.radius > 1.5) {
           ctx.beginPath();
@@ -81,7 +82,7 @@ const StarField: React.FC = () => {
     animate();
 
     return () => {
-      window.removeEventListener('resize', resizeCanvas);
+      window.removeEventListener("resize", resizeCanvas);
       cancelAnimationFrame(animationFrame);
     };
   }, []);
@@ -90,7 +91,7 @@ const StarField: React.FC = () => {
     <canvas
       ref={canvasRef}
       className="fixed inset-0 pointer-events-none z-0"
-      style={{ background: 'transparent' }}
+      style={{ background: "transparent" }}
     />
   );
 };

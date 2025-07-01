@@ -55,14 +55,9 @@ const Skills: React.FC = () => {
     {
       title: "Backend & APIs",
       skills: techStack.filter((skill) =>
-        [
-          "Python",
-          "FastAPI",
-          "Django",
-          "Flask",
-          "Frappe",
-          "Node.js",
-        ].includes(skill.name)
+        ["Python", "FastAPI", "Django", "Flask", "Frappe", "Node.js"].includes(
+          skill.name,
+        ),
       ),
       color: "from-neon-blue to-neon-cyan",
     },
@@ -76,7 +71,7 @@ const Skills: React.FC = () => {
           "Tailwind CSS",
           "HTML",
           "CSS",
-        ].includes(skill.name)
+        ].includes(skill.name),
       ),
       color: "from-neon-purple to-neon-pink",
     },
@@ -90,7 +85,7 @@ const Skills: React.FC = () => {
           "MariaDB",
           "DynamoDB",
           "SQLite",
-        ].includes(skill.name)
+        ].includes(skill.name),
       ),
       color: "from-neon-green to-neon-cyan",
     },
@@ -104,20 +99,16 @@ const Skills: React.FC = () => {
           "Git",
           "GitHub Actions",
           "Jenkins",
-        ].includes(skill.name)
+        ].includes(skill.name),
       ),
       color: "from-neon-blue to-neon-purple",
     },
     {
       title: "Monitoring & Analytics",
       skills: techStack.filter((skill) =>
-        [
-          "Datadog",
-          "Metabase",
-          "Grafana",
-          "Kibana",
-          "Prometheus",
-        ].includes(skill.name)
+        ["Datadog", "Metabase", "Grafana", "Kibana", "Prometheus"].includes(
+          skill.name,
+        ),
       ),
       color: "from-neon-pink to-neon-purple",
     },
@@ -131,7 +122,7 @@ const Skills: React.FC = () => {
           "Jira",
           "Appsmith",
           "Retool",
-        ].includes(skill.name)
+        ].includes(skill.name),
       ),
       color: "from-neon-cyan to-neon-blue",
     },
@@ -196,7 +187,11 @@ const Skills: React.FC = () => {
           {/* Skills Categories */}
           <div className="space-y-12">
             {categories.map((category) => (
-              <motion.div key={category.title} variants={itemVariants} className="space-y-6">
+              <motion.div
+                key={category.title}
+                variants={itemVariants}
+                className="space-y-6"
+              >
                 <h3
                   className={`text-2xl font-semibold bg-gradient-to-r ${category.color} bg-clip-text text-transparent`}
                 >
@@ -239,25 +234,33 @@ const Skills: React.FC = () => {
           {/* Additional Info */}
           <motion.div variants={itemVariants} className="mt-16 text-center">
             <div className="bg-white/5 dark:bg-white/5 backdrop-blur-sm rounded-2xl p-8 border border-white/10">
-              <h3 className="text-2xl font-semibold mb-4 text-neon-blue">Key Strengths</h3>
+              <h3 className="text-2xl font-semibold mb-4 text-neon-blue">
+                Key Strengths
+              </h3>
               <div className="grid grid-cols-1 md:grid-cols-3 gap-6 text-center">
                 <div>
                   <div className="text-3xl mb-2">🚀</div>
-                  <h4 className="font-semibold text-neon-purple mb-2">Scalability</h4>
+                  <h4 className="font-semibold text-neon-purple mb-2">
+                    Scalability
+                  </h4>
                   <p className="text-sm text-gray-600 dark:text-gray-400">
                     Building systems that scale from startup to unicorn
                   </p>
                 </div>
                 <div>
                   <div className="text-3xl mb-2">🔧</div>
-                  <h4 className="font-semibold text-neon-blue mb-2">DevOps Excellence</h4>
+                  <h4 className="font-semibold text-neon-blue mb-2">
+                    DevOps Excellence
+                  </h4>
                   <p className="text-sm text-gray-600 dark:text-gray-400">
                     Infrastructure as Code, CI/CD, and cloud-native solutions
                   </p>
                 </div>
                 <div>
                   <div className="text-3xl mb-2">💡</div>
-                  <h4 className="font-semibold text-neon-pink mb-2">Innovation</h4>
+                  <h4 className="font-semibold text-neon-pink mb-2">
+                    Innovation
+                  </h4>
                   <p className="text-sm text-gray-600 dark:text-gray-400">
                     Always exploring new technologies like LLM agents and AI
                   </p>

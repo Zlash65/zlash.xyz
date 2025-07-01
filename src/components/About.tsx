@@ -1,6 +1,15 @@
-import React from 'react';
-import { motion } from 'framer-motion';
-import { MapPin, Phone, Mail, Gamepad2, Monitor, Book, Plane, Smartphone } from 'lucide-react';
+import React from "react";
+import { motion } from "framer-motion";
+import {
+  MapPin,
+  Phone,
+  Mail,
+  Gamepad2,
+  Monitor,
+  Book,
+  Plane,
+  Smartphone,
+} from "lucide-react";
 
 const About: React.FC = () => {
   const containerVariants = {
@@ -27,10 +36,22 @@ const About: React.FC = () => {
   };
 
   const hobbies = [
-    { icon: Gamepad2, title: "Gaming", desc: "Valorant & Elder Scrolls Online" },
-    { icon: Monitor, title: "Watching", desc: "Anime, K-dramas, Sci-fi & Superhero" },
+    {
+      icon: Gamepad2,
+      title: "Gaming",
+      desc: "Valorant & Elder Scrolls Online",
+    },
+    {
+      icon: Monitor,
+      title: "Watching",
+      desc: "Anime, K-dramas, Sci-fi & Superhero",
+    },
     { icon: Book, title: "Reading", desc: "Manga, Manhwa & Light novels" },
-    { icon: Plane, title: "Traveling", desc: "Exploring new places with my wife" },
+    {
+      icon: Plane,
+      title: "Traveling",
+      desc: "Exploring new places with my wife",
+    },
   ];
 
   return (
@@ -50,28 +71,39 @@ const About: React.FC = () => {
               </span>
             </h2>
             <p className="text-gray-600 dark:text-gray-400 text-lg max-w-2xl mx-auto">
-              Backend & infrastructure engineer who loves simplifying complex problems with clean, scalable systems
+              Backend & infrastructure engineer who loves simplifying complex
+              problems with clean, scalable systems
             </p>
           </motion.div>
 
           {/* Personal Story & Key Achievements */}
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-stretch">
-            <motion.div
-              variants={itemVariants}
-              className="space-y-6"
-            >
+            <motion.div variants={itemVariants} className="space-y-6">
               {/* Personal Story */}
               <div className="bg-white/5 dark:bg-white/5 backdrop-blur-sm rounded-2xl p-8 border border-white/10">
-                <h3 className="text-2xl font-semibold mb-6 text-neon-pink">My Journey</h3>
+                <h3 className="text-2xl font-semibold mb-6 text-neon-pink">
+                  My Journey
+                </h3>
                 <div className="space-y-4 text-gray-600 dark:text-gray-300">
                   <p>
-                    🚀 Over the last 8+ years, I've built and maintained production-grade systems for fast-growing startups – from designing payroll infra that processed ₹1B+ in transactions to migrating an entire company off Heroku to AWS.
+                    🚀 Over the last 8+ years, I've built and maintained
+                    production-grade systems for fast-growing startups – from
+                    designing payroll infra that processed ₹1B+ in transactions
+                    to migrating an entire company off Heroku to AWS.
                   </p>
                   <p>
-                    📈 I care about developer experience, real-world reliability, and continuous learning. I pick up new tools quickly and constantly look for ways to improve systems and team velocity.
+                    📈 I care about developer experience, real-world
+                    reliability, and continuous learning. I pick up new tools
+                    quickly and constantly look for ways to improve systems and
+                    team velocity.
                   </p>
                   <p>
-                    🧠 Currently exploring: <strong className="text-neon-blue">LLM agent infra, AI-powered developer tools, async Python workflows</strong>, and more.
+                    🧠 Currently exploring:{" "}
+                    <strong className="text-neon-blue">
+                      LLM agent infra, AI-powered developer tools, async Python
+                      workflows
+                    </strong>
+                    , and more.
                   </p>
                 </div>
               </div>
@@ -81,30 +113,48 @@ const About: React.FC = () => {
                 variants={itemVariants}
                 className="bg-white/5 dark:bg-white/5 backdrop-blur-sm rounded-2xl p-8 border border-white/10"
               >
-                <h3 className="text-2xl font-semibold mb-6 text-neon-purple">Key Achievements</h3>
+                <h3 className="text-2xl font-semibold mb-6 text-neon-purple">
+                  Key Achievements
+                </h3>
                 <div className="space-y-4 text-gray-600 dark:text-gray-300">
                   <div className="flex items-start gap-3">
                     <div className="w-2 h-2 bg-neon-blue rounded-full mt-2 flex-shrink-0"></div>
                     <p>
-                      <strong className="text-neon-blue">Scaled to Unicorn:</strong> Helped migrate Clipboard Health from Heroku to AWS, contributing to their growth into a Sequoia-backed unicorn
+                      <strong className="text-neon-blue">
+                        Scaled to Unicorn:
+                      </strong>{" "}
+                      Helped migrate Clipboard Health from Heroku to AWS,
+                      contributing to their growth into a Sequoia-backed unicorn
                     </p>
                   </div>
                   <div className="flex items-start gap-3">
                     <div className="w-2 h-2 bg-neon-purple rounded-full mt-2 flex-shrink-0"></div>
                     <p>
-                      <strong className="text-neon-purple">₹1B+ Transactions:</strong> Built payment infrastructure at Kredily that processed over 1 billion INR in transactions
+                      <strong className="text-neon-purple">
+                        ₹1B+ Transactions:
+                      </strong>{" "}
+                      Built payment infrastructure at Kredily that processed
+                      over 1 billion INR in transactions
                     </p>
                   </div>
                   <div className="flex items-start gap-3">
                     <div className="w-2 h-2 bg-neon-pink rounded-full mt-2 flex-shrink-0"></div>
                     <p>
-                      <strong className="text-neon-pink">Performance Optimization:</strong> Reduced ECS deployment time from 50+ minutes to under 15 minutes through Docker optimizations
+                      <strong className="text-neon-pink">
+                        Performance Optimization:
+                      </strong>{" "}
+                      Reduced ECS deployment time from 50+ minutes to under 15
+                      minutes through Docker optimizations
                     </p>
                   </div>
                   <div className="flex items-start gap-3">
                     <div className="w-2 h-2 bg-neon-cyan rounded-full mt-2 flex-shrink-0"></div>
                     <p>
-                      <strong className="text-neon-cyan">Cost Reduction:</strong> Cut infrastructure costs by 75% through Terraform optimization and automation
+                      <strong className="text-neon-cyan">
+                        Cost Reduction:
+                      </strong>{" "}
+                      Cut infrastructure costs by 75% through Terraform
+                      optimization and automation
                     </p>
                   </div>
                 </div>
@@ -112,13 +162,12 @@ const About: React.FC = () => {
             </motion.div>
 
             {/* Contact Information & Hobbies */}
-            <motion.div
-              variants={itemVariants}
-              className="space-y-6"
-            >
+            <motion.div variants={itemVariants} className="space-y-6">
               {/* Contact Information */}
               <div className="bg-white/5 dark:bg-white/5 backdrop-blur-sm rounded-2xl p-8 border border-white/10">
-                <h3 className="text-2xl font-semibold mb-6 text-neon-blue">Contact Information</h3>
+                <h3 className="text-2xl font-semibold mb-6 text-neon-blue">
+                  Contact Information
+                </h3>
                 <div className="space-y-4">
                   <div className="flex items-center gap-3">
                     <MapPin className="text-neon-purple" size={20} />
@@ -134,7 +183,10 @@ const About: React.FC = () => {
                   </div>
                   <div className="flex items-center gap-3">
                     <Mail className="text-neon-pink" size={20} />
-                    <a href="mailto:zarrar65@gmail.com" className="hover:text-neon-pink transition-colors">
+                    <a
+                      href="mailto:zarrar65@gmail.com"
+                      className="hover:text-neon-pink transition-colors"
+                    >
                       zarrar65@gmail.com
                     </a>
                   </div>
@@ -143,7 +195,9 @@ const About: React.FC = () => {
 
               {/* Hobbies */}
               <div className="bg-white/5 dark:bg-white/5 backdrop-blur-sm rounded-2xl p-8 border border-white/10">
-                <h3 className="text-2xl font-semibold mb-6 text-neon-cyan">🧸 Outside of Work</h3>
+                <h3 className="text-2xl font-semibold mb-6 text-neon-cyan">
+                  🧸 Outside of Work
+                </h3>
                 <p className="text-gray-600 dark:text-gray-300 mb-6">
                   When I'm not coding, I'm usually:
                 </p>
@@ -158,13 +212,17 @@ const About: React.FC = () => {
                       <hobby.icon className="text-neon-blue" size={24} />
                       <div>
                         <div className="font-medium">{hobby.title}</div>
-                        <div className="text-sm text-gray-500 dark:text-gray-400">{hobby.desc}</div>
+                        <div className="text-sm text-gray-500 dark:text-gray-400">
+                          {hobby.desc}
+                        </div>
                       </div>
                     </motion.div>
                   ))}
                 </div>
                 <p className="text-gray-600 dark:text-gray-300 mt-6 italic">
-                  Somewhere in the multiverse, there’s a timeline more advanced than ours, free from capitalism, where I don’t have to work to survive - and my anime backlog is finally complete.
+                  Somewhere in the multiverse, there’s a timeline more advanced
+                  than ours, free from capitalism, where I don’t have to work to
+                  survive - and my anime backlog is finally complete.
                 </p>
                 <p className="text-gray-600 dark:text-gray-300 mt-6 italic">
                   El. Psy. Congroo.

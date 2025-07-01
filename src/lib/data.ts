@@ -1,0 +1,213 @@
+import { Project } from "./types";
+
+export const projects: Project[] = [
+  {
+    title: "Tumor Diagnosis",
+    category: "Machine Learning",
+    description:
+      "ML model predicting brain-tumor location and type from MRI scans using SGD and Random Forest.",
+    mediaType: "video",
+    mediaFormat: "youtube",
+    link: "https://youtu.be/yIQFmOheUiQ?si=1SsYdFdmcJEhbhsp",
+    thumbnail: "",
+    tags: ["Python", "ML", "SGD", "RFC", "Healthcare"],
+  },
+  {
+    title:
+      "Build a Gen-AI Dockerfile Generator using Amazon Bedrock + Terraform",
+    category: "AI Engineering",
+    description:
+      "An end-to-end serverless Gen-AI tool built using AWS Bedrock, Lambda, and Terraform.",
+    mediaType: "blog",
+    mediaFormat: "remote",
+    link: "https://medium.com/@zlash65/build-a-gen-ai-dockerfile-generator-with-aws-bedrock-and-terraform-927f6aba0781",
+    thumbnail: "/assets/images/blogs-gen-ai-dockerfile-generator.png",
+    tags: ["Gen-AI", "AWS Bedrock", "AWS Lambda", "Terraform", "LLM"],
+  },
+  {
+    title: "Setting up Jitsi-Meet on your Server",
+    category: "DevOps",
+    description:
+      "Step-by-step guide to self-hosting the Jitsi video conferencing platform with minimal setup on your own server.",
+    mediaType: "blog",
+    mediaFormat: "remote",
+    link: "https://medium.com/swlh/setting-up-jitsi-meet-on-your-server-b29ca29ef345",
+    thumbnail: "assets/images/blogs-setting-up-jitsi-meet.png",
+    tags: ["Jitsi Meet", "Self-hosting", "DevOps", "Video Conferencing"],
+  },
+  {
+    title: "React.js + Tailwind Portfolio",
+    category: "Web Development",
+    description:
+      "Personal portfolio site built with React.js and Tailwind CSS for Humber College’s Web Design & Development course.",
+    mediaType: "website",
+    mediaFormat: "remote",
+    link: "https://react-tailwind-portfolio-gold.vercel.app",
+    thumbnail: "/assets/images/projects-react-tailwind-portfolio.png",
+    github: "https://github.com/Zlash65/react-tailwind-portfolio",
+    tags: ["React.js", "Tailwind CSS", "Portfolio"],
+  },
+  {
+    title: "Next.js + Tailwind Portfolio",
+    category: "Web Development",
+    description:
+      "Personal portfolio site built with Next.js and Tailwind CSS for Humber College’s Web Design & Development course.",
+    mediaType: "website",
+    mediaFormat: "remote",
+    link: "https://react-nextjs-portfolio-qhrbix1uh-zlash65.vercel.app",
+    thumbnail: "/assets/images/projects-next-tailwind-portfolio.png",
+    github: "https://github.com/Zlash65/react-nextjs-portfolio",
+    tags: ["Next.js", "Tailwind CSS", "Portfolio"],
+  },
+  {
+    title: "Job Portal – React.js + Tailwind",
+    category: "Web Development",
+    description:
+      "Job portal matching nurses with healthcare facilities, built on React.js and Tailwind CSS.",
+    mediaType: "website",
+    mediaFormat: "remote",
+    link: "https://react-website-tailwind-8oek34m67-zlash65.vercel.app",
+    thumbnail: "/assets/images/projects-react-tailwind-job-portal.png",
+    github: "https://github.com/Zlash65/react-website-tailwind",
+    tags: ["React.js", "Tailwind CSS", "Job Portal", "Healthcare"],
+  },
+  {
+    title: "Job Portal – Next.js + Tailwind",
+    category: "Web Development",
+    description:
+      "Job portal matching nurses with healthcare facilities, built on Next.js and Tailwind CSS.",
+    mediaType: "website",
+    mediaFormat: "remote",
+    link: "https://health-explore-khaki.vercel.app",
+    thumbnail: "/assets/images/projects-next-tailwind-job-portal.png",
+    github: "https://github.com/Zlash65/health-explore",
+    tags: ["Next.js", "Tailwind CSS", "Job Portal", "Healthcare"],
+  },
+  {
+    title: "Jitsi Integration",
+    category: "Integration",
+    description:
+      "Customized and embedded the open-source Jitsi video-conferencing platform into Kredily’s HRM product.",
+    mediaType: "video",
+    mediaFormat: "youtube",
+    link: "https://youtu.be/qoFQYvnWsoE?si=vbPj-dZFoF87f2EL",
+    thumbnail: "",
+    github: "https://github.com/Zlash65?tab=repositories&q=jitsi",
+    tags: ["VCall", "Open Source", "Integration", "HRM"],
+  },
+  {
+    title: "Mattermost Integration",
+    category: "Integration",
+    description:
+      "Forked and modified Mattermost to integrate internal chat into Kredily’s HRM product.",
+    mediaType: "website",
+    mediaFormat: "remote",
+    link: "https://kredily.com/reach",
+    thumbnail: "/assets/images/projects-mattermost-integration.png",
+    github: "https://github.com/Zlash65?tab=repositories&q=mattermost",
+    tags: ["Chat", "Open Source", "Integration", "HRM"],
+  },
+  {
+    title: "Connect 4 Game",
+    category: "Game Development",
+    description: "Two-player Connect 4 built with vanilla JavaScript.",
+    mediaType: "website",
+    mediaFormat: "remote",
+    link: "https://zlash65.github.io/connect-four",
+    thumbnail: "/assets/images/projects-connect-four.png",
+    github: "https://github.com/Zlash65/connect-four",
+    tags: ["JavaScript", "Game Development"],
+  },
+  {
+    title: "Crypto Portfolio Tracker",
+    category: "Finance",
+    description:
+      "Frappe app aggregating exchange data, portfolio tracking, and price alerts.",
+    mediaType: "code",
+    mediaFormat: "remote",
+    link: "https://github.com/Zlash65/Crypto",
+    thumbnail: "/assets/images/projects-crypto.png",
+    github: "https://github.com/Zlash65/Crypto",
+    tags: ["Frappe", "Cryptocurrency", "Alerts"],
+  },
+  {
+    title: "Itinerate",
+    category: "Travel",
+    description:
+      "Hackathon project that builds a shortest-path itinerary for must-see spots.",
+    mediaType: "video",
+    mediaFormat: "youtube",
+    link: "https://youtu.be/9WuvEdx4WxQ?si=WhFgnULPQUtwlglE",
+    thumbnail: "",
+    tags: ["Hackathon", "Travel", "Path Optimization"],
+  },
+  {
+    title: "ShikShak",
+    category: "Education",
+    description:
+      "AngelList-style platform connecting teachers with institutions.",
+    mediaType: "code",
+    mediaFormat: "remote",
+    link: "https://github.com/speedforce-sih17/shikshak",
+    thumbnail: "/assets/images/projects-shikshak.png",
+    github: "https://github.com/speedforce-sih17/shikshak",
+    tags: ["Education", "Platform", "Recruitment", "Android"],
+  },
+  {
+    title: "11ty Marketing Site",
+    category: "Static Site",
+    description:
+      "Responsive marketing site built with the 11ty static-site generator and Tailwind CSS.",
+    mediaType: "website",
+    mediaFormat: "remote",
+    link: "https://eleventy-website.vercel.app",
+    thumbnail: "/assets/images/projects-eleventy-tailwind-website.png",
+    github: "https://github.com/Zlash65/eleventy-website",
+    tags: ["11ty", "Tailwind CSS", "Responsive"],
+  },
+  {
+    title: "Animated Brand Logo – Proton VPN",
+    category: "Motion Design",
+    description:
+      "Proton VPN logo animation created in Adobe After Effects and exported as Lottie.",
+    mediaType: "gif",
+    mediaFormat: "local",
+    link: "/assets/gifs/projects-proton-vpn-logo.gif",
+    thumbnail: "/assets/gifs/projects-proton-vpn-logo.gif",
+    source: "https://lottiefiles.com/105894-atom",
+    tags: ["Motion Design", "Adobe After Effects", "Lottie"],
+  },
+  {
+    title: "Logo Reveal – Crunchyroll",
+    category: "Motion Design",
+    description:
+      "Crunchyroll logo reveal animation created in Adobe After Effects.",
+    mediaType: "video",
+    mediaFormat: "local",
+    link: "/assets/videos/projects-crunchyroll-logo-reveal.mp4",
+    thumbnail: "/assets/images/projects-crunchyroll-logo-reveal.png",
+    tags: ["Motion Design", "Adobe After Effects"],
+  },
+  /*{
+    title: 'Motion Design – Preproduction',
+    category: 'Motion Design',
+    description:
+      'Short motion-graphics piece exploring pre-production concepts created in Adobe After Effects.',
+    mediaType: 'video',
+    mediaFormat: 'local',
+    link: '/public/assets/videos/projects-motion-design-preproduction.mp4',
+    thumbnail: '/public/assets/images/projects-motion-design-preproduction.png',
+    tags: ['Motion Design', 'Adobe After Effects', 'Rhetoric'],
+  },*/
+  {
+    title: "Motion Design – Kinetic Typography",
+    category: "Motion Design",
+    description:
+      "Kinetic typography motion graphic psa created for final assignment in Adobe After Effects.",
+    mediaType: "video",
+    mediaFormat: "local",
+    link: "/assets/videos/projects-motion-design-kinetic-typography.mp4",
+    thumbnail: "/assets/images/projects-motion-design-kinetic-typography.png",
+    tags: ["Motion Design", "Adobe After Effects", "Typography"],
+  },
+];

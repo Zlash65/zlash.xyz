@@ -1,12 +1,12 @@
-import React from 'react';
-import { motion } from 'framer-motion';
-import { ArrowDown, Download, ExternalLink } from 'lucide-react';
+import React from "react";
+import { motion } from "framer-motion";
+import { ArrowDown, Download, ExternalLink } from "lucide-react";
 
 const Hero: React.FC = () => {
   const scrollToAbout = () => {
-    const element = document.getElementById('about');
+    const element = document.getElementById("about");
     if (element) {
-      element.scrollIntoView({ behavior: 'smooth' });
+      element.scrollIntoView({ behavior: "smooth" });
     }
   };
 
@@ -34,7 +34,10 @@ const Hero: React.FC = () => {
   };
 
   return (
-    <section id="hero" className="min-h-screen flex items-center justify-center px-4 pt-16">
+    <section
+      id="hero"
+      className="min-h-screen flex items-center justify-center px-4 pt-16"
+    >
       <div className="max-w-4xl mx-auto text-center">
         <motion.div
           variants={containerVariants}
@@ -52,7 +55,7 @@ const Hero: React.FC = () => {
             >
               <div className="text-4xl mb-4">👋</div>
             </motion.div>
-            <motion.h1 
+            <motion.h1
               className="text-4xl md:text-6xl lg:text-7xl font-bold"
               variants={itemVariants}
             >
@@ -68,9 +71,10 @@ const Hero: React.FC = () => {
               Backend & Infrastructure Engineer
             </h2>
             <p className="text-lg md:text-xl text-gray-500 dark:text-gray-400 mt-4 leading-relaxed max-w-3xl mx-auto">
-              I simplify complex problems with clean, scalable systems. 
+              I simplify complex problems with clean, scalable systems.
               <br className="hidden md:block" />
-              <span className="text-neon-blue font-medium">8+ years</span> building production-grade systems for fast-growing startups.
+              <span className="text-neon-blue font-medium">8+ years</span>{" "}
+              building production-grade systems for fast-growing startups.
             </p>
           </motion.div>
 
@@ -81,7 +85,9 @@ const Hero: React.FC = () => {
                 whileHover={{ scale: 1.05 }}
                 className="p-4 rounded-lg bg-white/5 dark:bg-white/5 backdrop-blur-sm border border-white/10"
               >
-                <div className="text-neon-blue font-semibold">🚀 Scale Impact</div>
+                <div className="text-neon-blue font-semibold">
+                  🚀 Scale Impact
+                </div>
                 <div className="text-sm text-gray-600 dark:text-gray-400 mt-1">
                   Helped scale to Sequoia-backed unicorn
                 </div>
@@ -90,7 +96,9 @@ const Hero: React.FC = () => {
                 whileHover={{ scale: 1.05 }}
                 className="p-4 rounded-lg bg-white/5 dark:bg-white/5 backdrop-blur-sm border border-white/10"
               >
-                <div className="text-neon-purple font-semibold">💰 Transaction Volume</div>
+                <div className="text-neon-purple font-semibold">
+                  💰 Transaction Volume
+                </div>
                 <div className="text-sm text-gray-600 dark:text-gray-400 mt-1">
                   Built systems processing ₹1B+ transactions
                 </div>
@@ -99,7 +107,9 @@ const Hero: React.FC = () => {
                 whileHover={{ scale: 1.05 }}
                 className="p-4 rounded-lg bg-white/5 dark:bg-white/5 backdrop-blur-sm border border-white/10"
               >
-                <div className="text-neon-pink font-semibold">🧠 AI Explorer</div>
+                <div className="text-neon-pink font-semibold">
+                  🧠 AI Explorer
+                </div>
                 <div className="text-sm text-gray-600 dark:text-gray-400 mt-1">
                   Exploring LLM agents & AI tools
                 </div>
@@ -108,7 +118,10 @@ const Hero: React.FC = () => {
           </motion.div>
 
           {/* CTA Buttons */}
-          <motion.div variants={itemVariants} className="flex flex-col sm:flex-row gap-4 justify-center items-center">
+          <motion.div
+            variants={itemVariants}
+            className="flex flex-col sm:flex-row gap-4 justify-center items-center"
+          >
             <motion.a
               href="https://drive.google.com/drive/folders/1dZLF90-VlfEzu_SrwDRT0a-ArcmP2HYh"
               target="_blank"
@@ -119,9 +132,12 @@ const Hero: React.FC = () => {
             >
               <Download size={20} />
               Resume & Cover Letter
-              <ExternalLink size={16} className="group-hover:translate-x-1 transition-transform" />
+              <ExternalLink
+                size={16}
+                className="group-hover:translate-x-1 transition-transform"
+              />
             </motion.a>
-            
+
             <motion.button
               onClick={scrollToAbout}
               className="px-8 py-4 border-2 border-neon-blue text-neon-blue font-semibold rounded-lg hover:bg-neon-blue hover:text-white transition-all duration-300 flex items-center gap-2"
@@ -134,13 +150,16 @@ const Hero: React.FC = () => {
           </motion.div>
 
           {/* Current Focus */}
-          <motion.div 
+          <motion.div
             variants={itemVariants}
             className="mt-12 p-6 rounded-2xl bg-gradient-to-r from-neon-blue/10 to-neon-purple/10 border border-neon-blue/20 backdrop-blur-sm"
           >
-            <div className="text-sm font-medium text-neon-blue mb-2">🔭 Currently Exploring</div>
+            <div className="text-sm font-medium text-neon-blue mb-2">
+              🔭 Currently Exploring
+            </div>
             <div className="text-gray-600 dark:text-gray-300">
-              LLM agent infrastructure, AI-powered developer tools, and async Python workflows
+              LLM agent infrastructure, AI-powered developer tools, and async
+              Python workflows
             </div>
           </motion.div>
         </motion.div>

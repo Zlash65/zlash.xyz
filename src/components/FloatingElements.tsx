@@ -1,14 +1,50 @@
-import React from 'react';
-import { motion } from 'framer-motion';
+import React from "react";
+import { motion } from "framer-motion";
 
 const FloatingElements: React.FC = () => {
   const elements = [
-    { id: 1, size: 60, delay: 0, duration: 8, color: 'from-neon-blue/20 to-neon-cyan/20' },
-    { id: 2, size: 40, delay: 2, duration: 12, color: 'from-neon-purple/20 to-neon-pink/20' },
-    { id: 3, size: 80, delay: 4, duration: 10, color: 'from-neon-pink/10 to-neon-purple/10' },
-    { id: 4, size: 30, delay: 1, duration: 15, color: 'from-neon-cyan/20 to-neon-blue/20' },
-    { id: 5, size: 50, delay: 3, duration: 9, color: 'from-neon-blue/10 to-neon-purple/10' },
-    { id: 6, size: 35, delay: 5, duration: 11, color: 'from-neon-pink/20 to-neon-cyan/20' },
+    {
+      id: 1,
+      size: 60,
+      delay: 0,
+      duration: 8,
+      color: "from-neon-blue/20 to-neon-cyan/20",
+    },
+    {
+      id: 2,
+      size: 40,
+      delay: 2,
+      duration: 12,
+      color: "from-neon-purple/20 to-neon-pink/20",
+    },
+    {
+      id: 3,
+      size: 80,
+      delay: 4,
+      duration: 10,
+      color: "from-neon-pink/10 to-neon-purple/10",
+    },
+    {
+      id: 4,
+      size: 30,
+      delay: 1,
+      duration: 15,
+      color: "from-neon-cyan/20 to-neon-blue/20",
+    },
+    {
+      id: 5,
+      size: 50,
+      delay: 3,
+      duration: 9,
+      color: "from-neon-blue/10 to-neon-purple/10",
+    },
+    {
+      id: 6,
+      size: 35,
+      delay: 5,
+      duration: 11,
+      color: "from-neon-pink/20 to-neon-cyan/20",
+    },
   ];
 
   const getRandomPath = () => ({
@@ -41,12 +77,12 @@ const FloatingElements: React.FC = () => {
             duration: element.duration,
             delay: element.delay,
             repeat: Infinity,
-            repeatType: 'reverse',
-            ease: 'easeInOut',
+            repeatType: "reverse",
+            ease: "easeInOut",
           }}
         />
       ))}
-      
+
       {/* Robot Animation */}
       <motion.div
         className="absolute top-1/4 right-10 w-16 h-16"
@@ -57,7 +93,7 @@ const FloatingElements: React.FC = () => {
         transition={{
           duration: 6,
           repeat: Infinity,
-          ease: 'easeInOut',
+          ease: "easeInOut",
         }}
       >
         <div className="relative">
@@ -92,7 +128,7 @@ const FloatingElements: React.FC = () => {
         transition={{
           duration: 15,
           repeat: Infinity,
-          ease: 'easeInOut',
+          ease: "easeInOut",
         }}
       >
         <div className="relative">
@@ -119,7 +155,7 @@ const FloatingElements: React.FC = () => {
         transition={{
           duration: 20,
           repeat: Infinity,
-          ease: 'linear',
+          ease: "linear",
         }}
       >
         <div className="relative">
@@ -146,7 +182,7 @@ const FloatingElements: React.FC = () => {
         transition={{
           duration: 25,
           repeat: Infinity,
-          ease: 'easeInOut',
+          ease: "easeInOut",
         }}
       >
         <div className="relative">
@@ -159,7 +195,7 @@ const FloatingElements: React.FC = () => {
           <div className="absolute -top-1 left-3 w-4 h-3 bg-neon-purple/30 rounded border border-neon-purple/50"></div>
         </div>
       </motion.div>
-      
+
       {/* AI-inspired geometric shapes */}
       <motion.div
         className="absolute top-20 right-20 w-16 h-16 border-2 border-neon-blue/30 rotate-45"
@@ -170,10 +206,10 @@ const FloatingElements: React.FC = () => {
         transition={{
           duration: 8,
           repeat: Infinity,
-          ease: 'easeInOut',
+          ease: "easeInOut",
         }}
       />
-      
+
       <motion.div
         className="absolute bottom-32 left-16 w-12 h-12 border-2 border-neon-purple/30 rounded-full"
         animate={{
@@ -183,10 +219,10 @@ const FloatingElements: React.FC = () => {
         transition={{
           duration: 6,
           repeat: Infinity,
-          ease: 'easeInOut',
+          ease: "easeInOut",
         }}
       />
-      
+
       <motion.div
         className="absolute top-1/2 left-10 w-8 h-8 bg-gradient-to-r from-neon-pink/20 to-neon-purple/20 transform rotate-45"
         animate={{
@@ -197,7 +233,7 @@ const FloatingElements: React.FC = () => {
         transition={{
           duration: 12,
           repeat: Infinity,
-          ease: 'easeInOut',
+          ease: "easeInOut",
         }}
       />
     </div>

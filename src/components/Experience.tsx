@@ -1,6 +1,6 @@
-import React from 'react';
-import { motion } from 'framer-motion';
-import { Calendar, MapPin, ExternalLink } from 'lucide-react';
+import React from "react";
+import { motion } from "framer-motion";
+import { Calendar, MapPin, ExternalLink } from "lucide-react";
 
 const Experience: React.FC = () => {
   const experiences = [
@@ -18,8 +18,8 @@ const Experience: React.FC = () => {
         "Wrote Python scripts for web scraping, data enrichment, and pre-population workflows using CLAY.com, ChatGPT, and Gemini, supporting rapid market expansion in the US.",
         "Integrated Datadog for full-stack monitoring and set up custom Metabase dashboards to track KPIs and surface operational insights. Collaborated cross-functionally with Founders and Engineers to translate business needs into scalable, automated technical solutions.",
         "Created Terraform modules for Datadog monitors, SLOs, and synthetic health checks to enable consistent observability across services.",
-        "Integrated full-stack monitoring and alerting into CI/CD, defining SLOs tied to key SLIs for uptime and latency."
-      ]
+        "Integrated full-stack monitoring and alerting into CI/CD, defining SLOs tied to key SLIs for uptime and latency.",
+      ],
     },
     {
       title: "Senior Software Developer",
@@ -37,8 +37,8 @@ const Experience: React.FC = () => {
         "Developed internal Python-based tooling and scripts to support CI workflows, infrastructure diagnostics, and environment health checks.",
         "Monitored production systems and CI/CD workflows, ensuring uptime, resolving bottlenecks, and proactively addressing issues using tools like CloudWatch, Datadog, and custom scripts.",
         "Led the development of a reusable Datadog observability module with monitor and SLO templates adopted across microservices.",
-        "Participated in on-call rotation (1 week/month) to handle incidents, triage alerts, and ensure SLA adherence."
-      ]
+        "Participated in on-call rotation (1 week/month) to handle incidents, triage alerts, and ensure SLA adherence.",
+      ],
     },
     {
       title: "Senior Software Engineer - 2",
@@ -55,8 +55,8 @@ const Experience: React.FC = () => {
         "Forked and customized the open-source Jitsi codebase to meet platform-specific requirements, deployed it on a dedicated server, and integrated it within the app, enabling seamless in-app video conferencing and eliminating the need to switch to external tools, making the platform a one-stop solution for all employee related needs.",
         "Managed end-to-end deployment on AWS, configuring EC2, Elastic Load Balancers, and Lambda functions to support a high-availability infrastructure.",
         "Led production release cycles, including versioning, deployment automation, and Play Store app submissions for Android, ensuring smooth rollouts with minimal downtime.",
-        "Provided after-hours technical support, pairing with users to resolve production issues and maintain service reliability."
-      ]
+        "Provided after-hours technical support, pairing with users to resolve production issues and maintain service reliability.",
+      ],
     },
     {
       title: "Software Engineer",
@@ -68,8 +68,8 @@ const Experience: React.FC = () => {
         "Built and maintained AWS Lambda functions to fetch, normalize, and process hospital data, creating a scalable, serverless API layer.",
         "Created a feature called Fluttr that made the bot smarter by using the webpage the user came from. If someone started a chat from the cardiology page, the bot would skip the usual questions and jump straight to heart-related help.",
         "Refactored and modularized hospital integration APIs for improved scalability and maintainability, significantly reducing integration time for new partners.",
-        "Improved the in-house spellcheck algorithm to better handle domain-specific medical terms and typos, allowing the bot to recognize and triage even poorly spelled symptoms or conditions more effectively."
-      ]
+        "Improved the in-house spellcheck algorithm to better handle domain-specific medical terms and typos, allowing the bot to recognize and triage even poorly spelled symptoms or conditions more effectively.",
+      ],
     },
     {
       title: "Software Engineer",
@@ -83,9 +83,9 @@ const Experience: React.FC = () => {
         "Managed Git-based code repositories and deployment workflows, contributing to efficient version control and CI practices.",
         "Participated in code reviews, debugging, and unit testing, maintaining high code quality and reducing production bugs.",
         "Demonstrated a keen eye for design and UX, ensuring that the websites and software products developed were visually appealing and user-friendly.",
-        "Participated in on-call rotation and actively handled user-reported issues via GitHub and forums, aligned with early-stage SRE practices."
-      ]
-    }
+        "Participated in on-call rotation and actively handled user-reported issues via GitHub and forums, aligned with early-stage SRE practices.",
+      ],
+    },
   ];
 
   const containerVariants = {
@@ -152,7 +152,9 @@ const Experience: React.FC = () => {
                 <motion.div
                   whileHover={{ scale: 1.02 }}
                   className={`ml-12 md:ml-0 md:w-5/12 ${
-                    index % 2 === 0 ? "md:mr-auto md:pr-8" : "md:ml-auto md:pl-8"
+                    index % 2 === 0
+                      ? "md:mr-auto md:pr-8"
+                      : "md:ml-auto md:pl-8"
                   }`}
                 >
                   <div className="bg-white/5 dark:bg-white/5 backdrop-blur-sm rounded-2xl p-6 border border-white/10 hover:border-neon-blue/30 transition-colors">
@@ -190,7 +192,7 @@ const Experience: React.FC = () => {
                           <span>{achievement}</span>
                         </motion.div>
                       ))}
-                      
+
                       {exp.achievements.length > 3 && (
                         <details className="group">
                           <summary className="cursor-pointer text-neon-blue text-sm font-medium hover:text-neon-purple transition-colors">

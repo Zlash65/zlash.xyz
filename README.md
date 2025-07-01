@@ -59,17 +59,20 @@ The portfolio features a sophisticated Space/AI aesthetic with:
 ### Installation
 
 1. **Clone the repository**
+
    ```bash
    git clone https://github.com/Zlash65/zlash.xyz.git
    cd zlash.xyz
    ```
 
 2. **Install dependencies**
+
    ```bash
    npm install
    ```
 
 3. **Start development server**
+
    ```bash
    npm run dev
    ```

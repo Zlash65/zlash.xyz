@@ -1,6 +1,6 @@
-import React from 'react';
-import { motion } from 'framer-motion';
-import { GraduationCap, Award, Trophy } from 'lucide-react';
+import React from "react";
+import { motion } from "framer-motion";
+import { GraduationCap, Award, Trophy } from "lucide-react";
 
 const Education: React.FC = () => {
   const education = [
@@ -10,7 +10,7 @@ const Education: React.FC = () => {
       type: "Certificate of Achievement",
       gpa: "9.27 GPA",
       year: "2022",
-      color: "from-neon-blue to-neon-cyan"
+      color: "from-neon-blue to-neon-cyan",
     },
     {
       degree: "Computer Science and Engineering",
@@ -18,31 +18,31 @@ const Education: React.FC = () => {
       type: "Bachelor of Engineering",
       gpa: "8.87 GPA",
       year: "2013-2017",
-      color: "from-neon-purple to-neon-pink"
-    }
+      color: "from-neon-purple to-neon-pink",
+    },
   ];
 
   const achievements = [
     {
       title: "2nd position - Cyber Hunt - Aahvan'14",
       icon: Trophy,
-      color: "text-yellow-400"
+      color: "text-yellow-400",
     },
     {
       title: "6th position in Code-Hack-2b (online competition on Hackerearth)",
       icon: Award,
-      color: "text-neon-blue"
+      color: "text-neon-blue",
     },
     {
       title: "2nd position in Exhibits'17 for last year college project",
       icon: Trophy,
-      color: "text-yellow-400"
+      color: "text-yellow-400",
     },
     {
       title: "Participated in Smart India Hackathon 2017",
       icon: Award,
-      color: "text-neon-purple"
-    }
+      color: "text-neon-purple",
+    },
   ];
 
   const containerVariants = {
@@ -96,7 +96,7 @@ const Education: React.FC = () => {
                 <GraduationCap className="text-neon-blue" />
                 Education
               </h3>
-              
+
               <div className="space-y-6">
                 {education.map((edu, index) => (
                   <motion.div
@@ -113,17 +113,15 @@ const Education: React.FC = () => {
                         <p className="text-lg text-neon-purple font-medium mb-1">
                           {edu.institution}
                         </p>
-                        <p className="text-gray-400 text-sm">
-                          {edu.type}
-                        </p>
+                        <p className="text-gray-400 text-sm">{edu.type}</p>
                       </div>
                       <div className="text-right">
-                        <div className={`text-lg font-bold bg-gradient-to-r ${edu.color} bg-clip-text text-transparent`}>
+                        <div
+                          className={`text-lg font-bold bg-gradient-to-r ${edu.color} bg-clip-text text-transparent`}
+                        >
                           {edu.gpa}
                         </div>
-                        <div className="text-sm text-gray-400">
-                          {edu.year}
-                        </div>
+                        <div className="text-sm text-gray-400">{edu.year}</div>
                       </div>
                     </div>
                   </motion.div>
@@ -137,7 +135,7 @@ const Education: React.FC = () => {
                 <Award className="text-neon-purple" />
                 Achievements & Activities
               </h3>
-              
+
               <div className="space-y-4">
                 {achievements.map((achievement, index) => (
                   <motion.div
@@ -147,7 +145,10 @@ const Education: React.FC = () => {
                     className="bg-white/5 dark:bg-white/5 backdrop-blur-sm rounded-xl p-4 border border-white/10 hover:border-neon-purple/30 transition-all duration-300"
                   >
                     <div className="flex items-center gap-4">
-                      <achievement.icon className={`${achievement.color} flex-shrink-0`} size={24} />
+                      <achievement.icon
+                        className={`${achievement.color} flex-shrink-0`}
+                        size={24}
+                      />
                       <p className="text-gray-300 font-medium">
                         {achievement.title}
                       </p>
@@ -159,17 +160,15 @@ const Education: React.FC = () => {
           </div>
 
           {/* Bottom CTA */}
-          <motion.div
-            variants={itemVariants}
-            className="mt-16 text-center"
-          >
+          <motion.div variants={itemVariants} className="mt-16 text-center">
             <div className="bg-gradient-to-r from-neon-blue/10 to-neon-purple/10 rounded-2xl p-8 border border-neon-blue/20 backdrop-blur-sm">
               <h3 className="text-2xl font-semibold mb-4 text-neon-blue">
                 Ready to Connect?
               </h3>
               <p className="text-gray-600 dark:text-gray-300 mb-6 max-w-2xl mx-auto">
-                I'm always interested in discussing new opportunities, tech challenges, or just connecting with fellow developers. 
-                Let's build something amazing together!
+                I'm always interested in discussing new opportunities, tech
+                challenges, or just connecting with fellow developers. Let's
+                build something amazing together!
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
                 <motion.a

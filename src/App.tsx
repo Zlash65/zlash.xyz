@@ -1,31 +1,33 @@
-import React, { useEffect, useState } from 'react';
-import { motion, AnimatePresence } from 'framer-motion';
-import Header from './components/Header';
-import Hero from './components/Hero';
-import About from './components/About';
-import Experience from './components/Experience';
-import Projects from './components/Projects';
-import Skills from './components/Skills';
-import Education from './components/Education';
-import StarField from './components/StarField';
-import FloatingElements from './components/FloatingElements';
+import React, { useEffect, useState } from "react";
+import { motion, AnimatePresence } from "framer-motion";
+import Header from "./components/Header";
+import Hero from "./components/Hero";
+import About from "./components/About";
+import Experience from "./components/Experience";
+import Projects from "./components/Projects";
+import Skills from "./components/Skills";
+import Education from "./components/Education";
+import StarField from "./components/StarField";
+import FloatingElements from "./components/FloatingElements";
+import ProjectsSection from "./components/ProjectsSection";
+import BlogSection from "./components/BlogsSection";
 
 function App() {
   const [darkMode, setDarkMode] = useState(true);
 
   useEffect(() => {
-    const savedMode = localStorage.getItem('darkMode');
+    const savedMode = localStorage.getItem("darkMode");
     if (savedMode !== null) {
       setDarkMode(JSON.parse(savedMode));
     }
   }, []);
 
   useEffect(() => {
-    localStorage.setItem('darkMode', JSON.stringify(darkMode));
+    localStorage.setItem("darkMode", JSON.stringify(darkMode));
     if (darkMode) {
-      document.documentElement.classList.add('dark');
+      document.documentElement.classList.add("dark");
     } else {
-      document.documentElement.classList.remove('dark');
+      document.documentElement.classList.remove("dark");
     }
   }, [darkMode]);
 
@@ -34,17 +36,19 @@ function App() {
   };
 
   return (
-    <div className={`min-h-screen transition-colors duration-300 ${
-      darkMode 
-        ? 'bg-gradient-to-br from-space-900 via-space-800 to-space-900 text-white' 
-        : 'bg-gradient-to-br from-blue-50 via-white to-purple-50 text-gray-900'
-    }`}>
+    <div
+      className={`min-h-screen transition-colors duration-300 ${
+        darkMode
+          ? "bg-gradient-to-br from-space-900 via-space-800 to-space-900 text-white"
+          : "bg-gradient-to-br from-blue-50 via-white to-purple-50 text-gray-900"
+      }`}
+    >
       <StarField />
       <FloatingElements />
-      
+
       <div className="relative z-10">
         <Header darkMode={darkMode} toggleDarkMode={toggleDarkMode} />
-        
+
         <motion.main
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
@@ -53,7 +57,8 @@ function App() {
           <Hero />
           <About />
           <Experience />
-          <Projects />
+          <BlogSection />
+          <ProjectsSection />
           <Skills />
           <Education />
         </motion.main>
