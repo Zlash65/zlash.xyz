@@ -43,19 +43,19 @@ export const projects: Project[] = [
       "An end-to-end AI Agent Chatbot built using FastAPI, LangGraph, Langchain & Streamlit!",
     mediaType: "blog",
     mediaFormat: "remote",
-    link: "https://medium.com/@zlash65/building-an-ai-chatbot-with-langchain-fastapi-streamlit-cf74f413ec15",
+    link: "https://dev.to/zlash65/building-an-ai-chatbot-with-langchain-fastapi-streamlit-377m",
     thumbnail: "/assets/gifs/blogs-agentic-ai-chatbot.gif",
     tags: ["Gen-AI", "LLM", "Langchain", "FastAPI", "Streamlit"],
   },
   {
     title:
       "Build a Gen-AI Dockerfile Generator using Amazon Bedrock + Terraform",
-    categories: ["AI Engineering"],
+    categories: ["Featured", "AI | ML"],
     description:
       "An end-to-end serverless Gen-AI tool built using AWS Bedrock, Lambda, and Terraform.",
     mediaType: "blog",
     mediaFormat: "remote",
-    link: "https://medium.com/@zlash65/build-a-gen-ai-dockerfile-generator-with-aws-bedrock-and-terraform-927f6aba0781",
+    link: "https://dev.to/zlash65/build-a-gen-ai-dockerfile-generator-with-aws-bedrock-lambda-and-terraform-17n8",
     thumbnail: "/assets/images/blogs-gen-ai-dockerfile-generator.png",
     tags: ["Gen-AI", "AWS Bedrock", "AWS Lambda", "Terraform", "LLM"],
   },
