@@ -13,6 +13,18 @@ export const projects: Project[] = [
     tags: ["Python", "ML", "SGD", "RFC", "Healthcare"],
   },
   {
+    title: "RAG PDF Chatbot",
+    categories: ["Featured", "AI | ML"],
+    description:
+      "A basic RAG chatbot using LangChain, FAISS, Streamlit, and Groq/Gemini to answer questions from uploaded PDFs.",
+    mediaType: "code",
+    mediaFormat: "remote",
+    link: "https://github.com/Zlash65/rag-bot-basic",
+    github: "https://github.com/Zlash65/rag-bot-basic",
+    thumbnail: "/assets/gifs/blogs-rag-bot-basic.gif",
+    tags: ["Gen-AI", "LLM", "Langchain", "Streamlit", "RAG"],
+  },
+  {
     title: "Agentic AI Chatbot",
     categories: ["Featured", "AI | ML"],
     description:
@@ -35,6 +47,17 @@ export const projects: Project[] = [
     github: "https://github.com/Zlash65/aws-bedrock-example",
     thumbnail: "/assets/images/blogs-gen-ai-dockerfile-generator.png",
     tags: ["Gen-AI", "AWS Bedrock", "AWS Lambda", "Terraform", "LLM"],
+  },
+  {
+    title: "RAG PDFBot",
+    categories: ["Featured", "AI | ML"],
+    description:
+      "A basic RAG chatbot using LangChain, FAISS, Streamlit, and Groq/Gemini to answer questions from uploaded PDFs.",
+    mediaType: "blog",
+    mediaFormat: "remote",
+    link: "https://dev.to/zlash65/building-a-rag-powered-pdf-chatbot-with-langchain-streamlit-and-faiss-9i9",
+    thumbnail: "/assets/gifs/blogs-rag-bot-basic.gif",
+    tags: ["Gen-AI", "LLM", "Langchain", "Streamlit", "RAG"],
   },
   {
     title: "Building an AI Chatbot with LangChain, FastAPI & Streamlit",
