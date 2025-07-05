@@ -13,16 +13,28 @@ export const projects: Project[] = [
     tags: ["Python", "ML", "SGD", "RFC", "Healthcare"],
   },
   {
-    title: "RAG PDF Chatbot",
+    title: "RAG PDF Chatbot V2",
     categories: ["Featured", "AI | ML"],
     description:
-      "A basic RAG chatbot using LangChain, FAISS, Streamlit, and Groq/Gemini to answer questions from uploaded PDFs.",
+      "A RAG chatbot using LangChain, Streamlit & ChromaDB with Multi-LLM support to answer questions from uploaded PDFs.",
+    mediaType: "code",
+    mediaFormat: "remote",
+    link: "https://github.com/Zlash65/rag-bot-chroma",
+    github: "https://github.com/Zlash65/rag-bot-chroma",
+    thumbnail: "/assets/gifs/blogs-rag-bot-chroma.gif",
+    tags: ["Gen-AI", "LLM", "Langchain", "Streamlit", "RAG", "ChromaDB"],
+  },
+  {
+    title: "RAG PDF Chatbot V1",
+    categories: ["Featured", "AI | ML"],
+    description:
+      "A RAG chatbot using LangChain, Streamlit & FAISS with Multi-LLM support to answer questions from uploaded PDFs.",
     mediaType: "code",
     mediaFormat: "remote",
     link: "https://github.com/Zlash65/rag-bot-basic",
     github: "https://github.com/Zlash65/rag-bot-basic",
     thumbnail: "/assets/gifs/blogs-rag-bot-basic.gif",
-    tags: ["Gen-AI", "LLM", "Langchain", "Streamlit", "RAG"],
+    tags: ["Gen-AI", "LLM", "Langchain", "Streamlit", "RAG", "FAISS"],
   },
   {
     title: "Agentic AI Chatbot",
@@ -49,15 +61,26 @@ export const projects: Project[] = [
     tags: ["Gen-AI", "AWS Bedrock", "AWS Lambda", "Terraform", "LLM"],
   },
   {
-    title: "RAG PDFBot",
+    title: "RAG PDFBot V2",
     categories: ["Featured", "AI | ML"],
     description:
-      "A basic RAG chatbot using LangChain, FAISS, Streamlit, and Groq/Gemini to answer questions from uploaded PDFs.",
+      "A RAG chatbot using LangChain, Streamlit & ChromaDB with Multi-LLM support to answer questions from uploaded PDFs.",
+    mediaType: "blog",
+    mediaFormat: "remote",
+    link: "https://dev.to/zlash65/refactoring-rag-pdfbot-modular-design-with-langchain-streamlit-and-chromadb-41fn",
+    thumbnail: "/assets/gifs/blogs-rag-bot-chroma.gif",
+    tags: ["Gen-AI", "LLM", "Langchain", "Streamlit", "RAG", "ChromaDB"],
+  },
+  {
+    title: "RAG PDFBot V1",
+    categories: ["Featured", "AI | ML"],
+    description:
+      "A RAG chatbot using LangChain, Streamlit & FAISS with Multi-LLM support to answer questions from uploaded PDFs.",
     mediaType: "blog",
     mediaFormat: "remote",
     link: "https://dev.to/zlash65/building-a-rag-powered-pdf-chatbot-with-langchain-streamlit-and-faiss-9i9",
     thumbnail: "/assets/gifs/blogs-rag-bot-basic.gif",
-    tags: ["Gen-AI", "LLM", "Langchain", "Streamlit", "RAG"],
+    tags: ["Gen-AI", "LLM", "Langchain", "Streamlit", "RAG", "FAISS"],
   },
   {
     title: "Building an AI Chatbot with LangChain, FastAPI & Streamlit",
