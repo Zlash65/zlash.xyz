@@ -13,7 +13,19 @@ export const projects: Project[] = [
     tags: ["Python", "ML", "SGD", "RFC", "Healthcare"],
   },
   {
-    title: "RAG PDF Chatbot V2",
+    title: "RAG PDFBot V3 - Fullstack",
+    categories: ["Featured", "AI | ML"],
+    description:
+      "An end-to-end Fullstack RAG chatbot using FastAPI, LangChain, ChromaDB & Streamlit with Multi-LLM support to answer questions from uploaded PDFs.",
+    mediaType: "code",
+    mediaFormat: "remote",
+    link: "https://github.com/Zlash65/rag-bot-fastapi",
+    github: "https://github.com/Zlash65/rag-bot-fastapi",
+    thumbnail: "/assets/gifs/blogs-rag-bot-fastapi.gif",
+    tags: ["Gen-AI", "LLM", "Langchain", "FastAPI", "Streamlit", "RAG", "ChromaDB"],
+  },
+  {
+    title: "RAG PDFBot V2 - Modular",
     categories: ["Featured", "AI | ML"],
     description:
       "A RAG chatbot using LangChain, Streamlit & ChromaDB with Multi-LLM support to answer questions from uploaded PDFs.",
@@ -25,7 +37,7 @@ export const projects: Project[] = [
     tags: ["Gen-AI", "LLM", "Langchain", "Streamlit", "RAG", "ChromaDB"],
   },
   {
-    title: "RAG PDF Chatbot V1",
+    title: "RAG PDFBot V1 - Monolith",
     categories: ["Featured", "AI | ML"],
     description:
       "A RAG chatbot using LangChain, Streamlit & FAISS with Multi-LLM support to answer questions from uploaded PDFs.",
@@ -61,7 +73,18 @@ export const projects: Project[] = [
     tags: ["Gen-AI", "AWS Bedrock", "AWS Lambda", "Terraform", "LLM"],
   },
   {
-    title: "RAG PDFBot V2",
+    title: "RAG PDFBot V3 - Fullstack",
+    categories: ["Featured", "AI | ML"],
+    description:
+      "An end-to-end Fullstack RAG chatbot using FastAPI, LangChain, ChromaDB & Streamlit with Multi-LLM support to answer questions from uploaded PDFs.",
+    mediaType: "blog",
+    mediaFormat: "remote",
+    link: "https://dev.to/zlash65/rag-pdfbot-v3-from-prototype-to-production-ready-ish-32f7",
+    thumbnail: "/assets/gifs/blogs-rag-bot-fastapi.gif",
+    tags: ["Gen-AI", "LLM", "Langchain", "FastAPI", "Streamlit", "RAG", "ChromaDB"],
+  },
+  {
+    title: "RAG PDFBot V2 - Modular",
     categories: ["Featured", "AI | ML"],
     description:
       "A RAG chatbot using LangChain, Streamlit & ChromaDB with Multi-LLM support to answer questions from uploaded PDFs.",
@@ -72,7 +95,7 @@ export const projects: Project[] = [
     tags: ["Gen-AI", "LLM", "Langchain", "Streamlit", "RAG", "ChromaDB"],
   },
   {
-    title: "RAG PDFBot V1",
+    title: "RAG PDFBot V1 - Monolith",
     categories: ["Featured", "AI | ML"],
     description:
       "A RAG chatbot using LangChain, Streamlit & FAISS with Multi-LLM support to answer questions from uploaded PDFs.",
