@@ -5,8 +5,8 @@ import { Calendar, MapPin, ExternalLink } from "lucide-react";
 const Experience: React.FC = () => {
   const experiences = [
     {
-      title: "Chief DevOps Engineer | Data Analyst",
-      company: "Trade Engage",
+      title: "Senior DevOps & Backend + Data Engineer",
+      company: "Stealth Startup",
       location: "Remote",
       period: "September 2024 - January 2025",
       achievements: [
@@ -15,7 +15,7 @@ const Experience: React.FC = () => {
         "Architected and deployed microservices on Amazon ECS (Fargate) with fully automated CI/CD pipelines using GitHub Actions and Docker, improving deployment speed and reliability.",
         "Refactored infrastructure into clean, reusable Infrastructure as Code (IaC) modules, boosting consistency across production and SDLC environments.",
         "Developed multiple FastAPI-based APIs in Python for analytics, third-party data ingestion, and business intelligence.",
-        "Wrote Python scripts for web scraping, data enrichment, and pre-population workflows using CLAY.com, ChatGPT, and Gemini, supporting rapid market expansion in the US.",
+        "Wrote Python scripts for web scraping, data enrichment, and pre-population workflows using AI-driven data enrichment tools, ChatGPT, and Gemini, supporting rapid market expansion in the US.",
         "Integrated Datadog for full-stack monitoring and set up custom Metabase dashboards to track KPIs and surface operational insights. Collaborated cross-functionally with Founders and Engineers to translate business needs into scalable, automated technical solutions.",
         "Created Terraform modules for Datadog monitors, SLOs, and synthetic health checks to enable consistent observability across services.",
         "Integrated full-stack monitoring and alerting into CI/CD, defining SLOs tied to key SLIs for uptime and latency.",
