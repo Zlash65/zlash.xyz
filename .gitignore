@@ -147,3 +147,11 @@ dist-ssr
 .yarn/build-state.yml
 .yarn/install-state.gz
 .pnp.*
+
+# AI / MCP
+.serena
+.claude
+.mcp.json
+AGENTS.md
+CLAUDE.md
+GEMINI.md

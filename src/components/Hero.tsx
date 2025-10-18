@@ -68,7 +68,7 @@ const Hero: React.FC = () => {
           {/* Tagline */}
           <motion.div variants={itemVariants}>
             <h2 className="text-xl md:text-2xl lg:text-3xl font-light text-gray-600 dark:text-gray-300 leading-relaxed">
-              Backend & Infrastructure Engineer
+              Senior DevOps, Automation & AI Engineer
             </h2>
             <p className="text-lg md:text-xl text-gray-500 dark:text-gray-400 mt-4 leading-relaxed max-w-3xl mx-auto">
               I simplify complex problems with clean, scalable systems.
@@ -86,10 +86,10 @@ const Hero: React.FC = () => {
                 className="p-4 rounded-lg bg-white/5 dark:bg-white/5 backdrop-blur-sm border border-white/10"
               >
                 <div className="text-neon-blue font-semibold">
-                  🚀 Scale Impact
+                  🚀 YC Unicorn Impact
                 </div>
                 <div className="text-sm text-gray-600 dark:text-gray-400 mt-1">
-                  Helped scale to Sequoia-backed unicorn
+                  Led AWS migration at YC S17 unicorn
                 </div>
               </motion.div>
               <motion.div
@@ -108,10 +108,10 @@ const Hero: React.FC = () => {
                 className="p-4 rounded-lg bg-white/5 dark:bg-white/5 backdrop-blur-sm border border-white/10"
               >
                 <div className="text-neon-pink font-semibold">
-                  🧠 AI Explorer
+                  💰 Cost Optimization
                 </div>
                 <div className="text-sm text-gray-600 dark:text-gray-400 mt-1">
-                  Exploring LLM agents & AI tools
+                  Saved $72K+/year in infrastructure costs
                 </div>
               </motion.div>
             </div>
@@ -158,8 +158,7 @@ const Hero: React.FC = () => {
               🔭 Currently Exploring
             </div>
             <div className="text-gray-600 dark:text-gray-300">
-              LLM agent infrastructure, AI-powered developer tools, and async
-              Python workflows
+              Production LLM infrastructure: vector databases (Qdrant), Dagster orchestration, MCP servers, and AI agent tooling
             </div>
           </motion.div>
         </motion.div>

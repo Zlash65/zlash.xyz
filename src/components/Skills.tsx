@@ -31,6 +31,9 @@ const Skills: React.FC = () => {
     { name: "Terraform", color: "#7B42BC", logo: "terraform" },
     { name: "Docker", color: "#2496ED", logo: "docker" },
     { name: "AWS", color: "#FF9900", logo: "amazon-web-services" },
+    { name: "AWS Cognito", color: "#DD344C", logo: "aws-cognito" },
+    { name: "AWS EFS", color: "#FF9900", logo: "aws-efs" },
+    { name: "AWS ALB", color: "#8C4FFF", logo: "aws-alb" },
     { name: "Git", color: "#F05032", logo: "git" },
     { name: "GitHub Actions", color: "#2088FF", logo: "github-actions" },
     { name: "Jenkins", color: "#D24939", logo: "jenkins" },
@@ -41,6 +44,22 @@ const Skills: React.FC = () => {
     { name: "Grafana", color: "#F46800", logo: "grafana" },
     { name: "Kibana", color: "#E8488B", logo: "kibana" },
     { name: "Prometheus", color: "#E6522C", logo: "prometheus" },
+    { name: "PostHog", color: "#1D4AFF", logo: "posthog" },
+
+    // AI & ML Infrastructure
+    { name: "Qdrant", color: "#DC244C", logo: "qdrant" },
+    { name: "Dagster", color: "#6B48FF", logo: "dagster" },
+    { name: "Streamlit", color: "#FF4B4B", logo: "streamlit" },
+    { name: "LangChain", color: "#1C3C3C", logo: "langchain" },
+    { name: "ChromaDB", color: "#FF6B6B", logo: "chromadb" },
+    { name: "OpenAI", color: "#412991", logo: "openai" },
+    { name: "Deepgram", color: "#13EF93", logo: "deepgram" },
+    { name: "AssemblyAI", color: "#1C1C1C", logo: "assemblyai" },
+
+    // Workflow Automation
+    { name: "N8N", color: "#EA4B71", logo: "n8n" },
+    { name: "Zapier", color: "#FF4A00", logo: "zapier" },
+    { name: "Relay.app", color: "#5B47FB", logo: "relay" },
 
     // Development Tools
     { name: "Android Studio", color: "#3DDC84", logo: "android-studio" },
@@ -96,6 +115,9 @@ const Skills: React.FC = () => {
           "Terraform",
           "Docker",
           "AWS",
+          "AWS Cognito",
+          "AWS EFS",
+          "AWS ALB",
           "Git",
           "GitHub Actions",
           "Jenkins",
@@ -106,11 +128,27 @@ const Skills: React.FC = () => {
     {
       title: "Monitoring & Analytics",
       skills: techStack.filter((skill) =>
-        ["Datadog", "Metabase", "Grafana", "Kibana", "Prometheus"].includes(
+        ["Datadog", "Metabase", "Grafana", "Kibana", "Prometheus", "PostHog"].includes(
           skill.name,
         ),
       ),
       color: "from-neon-pink to-neon-purple",
+    },
+    {
+      title: "AI & ML Infrastructure",
+      skills: techStack.filter((skill) =>
+        ["Qdrant", "Dagster", "Streamlit", "LangChain", "ChromaDB", "OpenAI", "Deepgram", "AssemblyAI"].includes(
+          skill.name,
+        ),
+      ),
+      color: "from-neon-cyan to-neon-blue",
+    },
+    {
+      title: "Workflow Automation",
+      skills: techStack.filter((skill) =>
+        ["N8N", "Zapier", "Relay.app"].includes(skill.name),
+      ),
+      color: "from-neon-pink to-neon-cyan",
     },
     {
       title: "Development Tools",
@@ -124,7 +162,7 @@ const Skills: React.FC = () => {
           "Retool",
         ].includes(skill.name),
       ),
-      color: "from-neon-cyan to-neon-blue",
+      color: "from-neon-green to-neon-blue",
     },
   ];
 
@@ -216,7 +254,7 @@ const Skills: React.FC = () => {
                           >
                             {skill.name.slice(0, 2).toUpperCase()}
                           </div>
-                          <span className="text-sm font-medium text-gray-700 dark:text-gray-300 group-hover:text-neon-blue transition-colors">
+                          <span className="text-sm font-medium text-gray-700 dark:text-gray-300 group-hover:text-neon-blue transition-colors break-words text-center">
                             {skill.name}
                           </span>
                         </div>
@@ -259,10 +297,10 @@ const Skills: React.FC = () => {
                 <div>
                   <div className="text-3xl mb-2">💡</div>
                   <h4 className="font-semibold text-neon-pink mb-2">
-                    Innovation
+                    AI & Innovation
                   </h4>
                   <p className="text-sm text-gray-600 dark:text-gray-400">
-                    Always exploring new technologies like LLM agents and AI
+                    Production LLM infrastructure with vector databases and AI agent tooling
                   </p>
                 </div>
               </div>
