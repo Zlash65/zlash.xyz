@@ -5,8 +5,29 @@ import { Calendar, MapPin, ExternalLink } from "lucide-react";
 const Experience: React.FC = () => {
   const experiences = [
     {
-      title: "Senior DevOps & Backend + Data Engineer",
-      company: "Stealth Startup",
+      title: "Chief DevOps Engineer | Automation & AI Engineer",
+      company: "Trade Engage",
+      location: "Remote",
+      period: "July 2024 - October 2024",
+      achievements: [
+        "Migrated our production stack to a new AWS region using Terraform, executed a blue/green cutover, and kept downtime minimal with a tested rollback plan.",
+        "Reduced AWS costs by ~$4,000 per month by right-sizing compute, fixing autoscaling thresholds, trimming egress and storage, and removing orphaned resources.",
+        "Added a read replica and updated the FastAPI application to route read and write traffic separately, which made the app load faster and stabilized database CPU usage.",
+        "Led a security hardening effort toward SOC2 readiness by tightening secrets management, enforcing least-privilege IAM, enabling audit logging and alerts, and adding gitleaks check.",
+        "Launched an analytics microservice with AWS Lambda and Amazon RDS provisioned via Terraform and set up a CI/CD pipeline in GitHub Actions.",
+        "Forked an open source Frappe MCP server codebase for internal use, made the necessary changes, and deployed it on Amazon ECS behind an ALB using Terraform. Added the MCP server to Claude Desktop to connect with CRM and query the data.",
+        "Deployed a self-hosted Qdrant vector database on ECS with EFS, with all infrastructure managed as code in Terraform.",
+        "Deployed a Streamlit microservice and self hosted Dagster (web and daemon) on ECS with S3, EFS, and RDS, and added an authentication layer for both using Amazon Cognito. All the AWS resources were provisioned using Terraform.",
+        "Enhanced our RDS Terraform module to support separate instance classes for read and write nodes, non-Postgres engines, and optional extensions such as PostGIS.",
+        "Developed a full stack in-house CRM platform for internal use using Frappe Framework. Provisioned the infrastructure using Terraform. The CRM synced data from product database and has features like - aggregating data from multiple sources like Email, Granola.ai notes, OpenPhone calls, Zoom Meeting, Calendar - the data is enhanced using AI.",
+        "Added support to CRM to capture session data and screen replay from PostHog and tag it to users view for seamless observation of product journey across different users.",
+        "Added voice note taking feature to CRM that transcribes using Deepgram and Assembly AI and enhanced the transcript using OpenAI.",
+        "Created automations with n8n, Zapier, and Relay.app, including email summarization into Slack, Slack-to-Notion task creation, CI/CD failure alerts, email responder with look-back, and Zoom webhooks that store recordings in S3 and generate enhanced notes from the transcript.",
+      ],
+    },
+    {
+      title: "Chief DevOps Engineer | Data Analyst",
+      company: "Trade Engage",
       location: "Remote",
       period: "September 2024 - January 2025",
       achievements: [
