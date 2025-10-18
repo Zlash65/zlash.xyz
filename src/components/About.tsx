@@ -71,7 +71,7 @@ const About: React.FC = () => {
               </span>
             </h2>
             <p className="text-gray-600 dark:text-gray-400 text-lg max-w-2xl mx-auto">
-              Backend & infrastructure engineer who loves simplifying complex
+              Senior DevOps, Automation & AI engineer who loves simplifying complex
               problems with clean, scalable systems
             </p>
           </motion.div>
@@ -89,21 +89,23 @@ const About: React.FC = () => {
                     🚀 Over the last 8+ years, I've built and maintained
                     production-grade systems for fast-growing startups – from
                     designing payroll infra that processed ₹1B+ in transactions
-                    to migrating an entire company off Heroku to AWS.
+                    to migrating entire companies to AWS, and most recently
+                    deploying production LLM infrastructure with vector databases
+                    and AI agent tooling.
                   </p>
                   <p>
-                    📈 I care about developer experience, real-world
-                    reliability, and continuous learning. I pick up new tools
-                    quickly and constantly look for ways to improve systems and
-                    team velocity.
+                    📈 I care about cost efficiency, developer experience, and
+                    real-world reliability. I pick up new tools quickly and
+                    constantly look for ways to improve systems, reduce costs,
+                    and boost team velocity.
                   </p>
                   <p>
                     🧠 Currently exploring:{" "}
                     <strong className="text-neon-blue">
-                      LLM agent infra, AI-powered developer tools, async Python
-                      workflows
+                      Production LLM infrastructure with vector databases (Qdrant),
+                      Dagster orchestration, MCP servers, and AI agent tooling
                     </strong>
-                    , and more.
+                    .
                   </p>
                 </div>
               </div>
@@ -121,10 +123,11 @@ const About: React.FC = () => {
                     <div className="w-2 h-2 bg-neon-blue rounded-full mt-2 flex-shrink-0"></div>
                     <p>
                       <strong className="text-neon-blue">
-                        Scaled to Unicorn:
+                        YC Unicorn Infrastructure:
                       </strong>{" "}
-                      Helped migrate Clipboard Health from Heroku to AWS,
-                      contributing to their growth into a Sequoia-backed unicorn
+                      Led entire production migration from Heroku to AWS at Clipboard Health
+                      (YC S17, Sequoia-backed unicorn), establishing the IaC foundation with
+                      Terraform and reusable modules in private registry
                     </p>
                   </div>
                   <div className="flex items-start gap-3">
@@ -151,10 +154,10 @@ const About: React.FC = () => {
                     <div className="w-2 h-2 bg-neon-cyan rounded-full mt-2 flex-shrink-0"></div>
                     <p>
                       <strong className="text-neon-cyan">
-                        Cost Reduction:
+                        Cost Optimization:
                       </strong>{" "}
-                      Cut infrastructure costs by 75% through Terraform
-                      optimization and automation
+                      Saved $72K+/year across roles: $48K at Trade Engage (AWS optimization)
+                      and $24K at Clipboard Health (Terraform Cloud drift reduction from $2K to $500/month)
                     </p>
                   </div>
                 </div>

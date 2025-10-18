@@ -1,6 +1,6 @@
 import React from "react";
 import { motion } from "framer-motion";
-import { Calendar, MapPin, ExternalLink } from "lucide-react";
+import { Calendar, MapPin } from "lucide-react";
 
 const Experience: React.FC = () => {
   const experiences = [
@@ -8,7 +8,7 @@ const Experience: React.FC = () => {
       title: "Chief DevOps Engineer | Automation & AI Engineer",
       company: "Trade Engage",
       location: "Remote",
-      period: "July 2024 - October 2024",
+      period: "July 2025 - October 2025",
       achievements: [
         "Migrated our production stack to a new AWS region using Terraform, executed a blue/green cutover, and kept downtime minimal with a tested rollback plan.",
         "Reduced AWS costs by ~$4,000 per month by right-sizing compute, fixing autoscaling thresholds, trimming egress and storage, and removing orphaned resources.",
