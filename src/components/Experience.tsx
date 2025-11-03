@@ -8,7 +8,7 @@ const Experience: React.FC = () => {
       title: "Chief DevOps Engineer | Automation & AI Engineer",
       company: "Stealth Startup",
       location: "Remote",
-      period: "July 2025 - October 2025",
+      period: "July 2025 - Present",
       achievements: [
         "Migrated production infrastructure to a new cloud region using IaC, executed a blue/green cutover, and kept downtime minimal with a tested rollback plan.",
         "Reduced cloud costs significantly by right-sizing compute resources, fixing autoscaling thresholds, optimizing data transfer and storage, and removing orphaned resources.",
