@@ -99,14 +99,6 @@ const About: React.FC = () => {
                     constantly look for ways to improve systems, reduce costs,
                     and boost team velocity.
                   </p>
-                  <p>
-                    🧠 Currently exploring:{" "}
-                    <strong className="text-neon-blue">
-                      Production LLM infrastructure with vector databases (Qdrant),
-                      Dagster orchestration, MCP servers, and AI agent tooling
-                    </strong>
-                    .
-                  </p>
                 </div>
               </div>
 
@@ -156,8 +148,7 @@ const About: React.FC = () => {
                       <strong className="text-neon-cyan">
                         Cost Optimization:
                       </strong>{" "}
-                      Saved $72K+/year across roles: $48K at Trade Engage (AWS optimization)
-                      and $24K at Clipboard Health (Terraform Cloud drift reduction from $2K to $500/month)
+                      Saved $72K+/year across roles through cloud optimization and infrastructure automation
                     </p>
                   </div>
                 </div>

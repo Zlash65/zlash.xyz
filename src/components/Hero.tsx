@@ -68,7 +68,7 @@ const Hero: React.FC = () => {
           {/* Tagline */}
           <motion.div variants={itemVariants}>
             <h2 className="text-xl md:text-2xl lg:text-3xl font-light text-gray-600 dark:text-gray-300 leading-relaxed">
-              Senior DevOps, Automation & AI Engineer
+              Senior DevOps, Automation & AI Application Engineer
             </h2>
             <p className="text-lg md:text-xl text-gray-500 dark:text-gray-400 mt-4 leading-relaxed max-w-3xl mx-auto">
               I simplify complex problems with clean, scalable systems.
@@ -122,7 +122,8 @@ const Hero: React.FC = () => {
             variants={itemVariants}
             className="flex flex-col sm:flex-row gap-4 justify-center items-center"
           >
-            <motion.a
+            {/* Temporarily disabled - NDA compliance */}
+            {/* <motion.a
               href="https://drive.google.com/drive/folders/1dZLF90-VlfEzu_SrwDRT0a-ArcmP2HYh"
               target="_blank"
               rel="noopener noreferrer"
@@ -136,7 +137,7 @@ const Hero: React.FC = () => {
                 size={16}
                 className="group-hover:translate-x-1 transition-transform"
               />
-            </motion.a>
+            </motion.a> */}
 
             <motion.button
               onClick={scrollToAbout}
@@ -152,13 +153,38 @@ const Hero: React.FC = () => {
           {/* Current Focus */}
           <motion.div
             variants={itemVariants}
-            className="mt-12 p-6 rounded-2xl bg-gradient-to-r from-neon-blue/10 to-neon-purple/10 border border-neon-blue/20 backdrop-blur-sm"
+            className="mt-12 p-6 rounded-2xl bg-gradient-to-br from-neon-blue/20 via-neon-purple/15 to-neon-pink/10 border-2 border-neon-blue/30 backdrop-blur-md shadow-2xl hover:shadow-neon-blue/20 transition-all duration-300"
+            whileHover={{ scale: 1.02, borderColor: "rgba(0, 240, 255, 0.5)" }}
           >
-            <div className="text-sm font-medium text-neon-blue mb-2">
-              🔭 Currently Exploring
+            <div className="flex items-center gap-2 mb-3">
+              <motion.div
+                animate={{
+                  rotate: [0, 10, -10, 10, 0],
+                  scale: [1, 1.1, 1, 1.1, 1]
+                }}
+                transition={{
+                  duration: 2,
+                  repeat: Infinity,
+                  repeatDelay: 3
+                }}
+                className="text-xl"
+              >
+                🔭
+              </motion.div>
+              <div className="text-base font-bold bg-gradient-to-r from-neon-blue to-neon-purple bg-clip-text text-transparent">
+                Currently Exploring
+              </div>
             </div>
-            <div className="text-gray-600 dark:text-gray-300">
-              Production LLM infrastructure: vector databases (Qdrant), Dagster orchestration, MCP servers, and AI agent tooling
+            <div className="text-sm md:text-base text-gray-600 dark:text-gray-200 leading-relaxed space-y-2">
+              <div>
+                <span className="font-semibold text-neon-blue">Production LLM infrastructure:</span> vector databases (Qdrant, ChromaDB, FAISS), Dagster orchestration, MCP servers, and AI agent tooling
+              </div>
+              <div>
+                <span className="font-semibold text-neon-purple">Infrastructure scaling:</span> optimizing systems to support millions of users with zero downtime
+              </div>
+              <div>
+                <span className="font-semibold text-neon-pink">Security research:</span> vulnerability discovery and responsible disclosure (3 critical Sev-0 reports)
+              </div>
             </div>
           </motion.div>
         </motion.div>
